@@ -25,15 +25,29 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY=os.getenv('SECRET_KEY')
 
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
+DEBUG = ENVIRONMENT != 'production'
 
 ALLOWED_HOSTS = ["*"]
-
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-}
+# Detect if running in production
+if ENVIRONMENT == 'production':
+    DATABASES = {
+        "default": dj_database_url.config(
+            default=os.getenv("DATABASE_URL"),
+            conn_max_age=600,
+            ssl_require=True
+        )
+    }
+else:
+    # Use local SQLite
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
 # Application definition
 
 INSTALLED_APPS = [
@@ -120,28 +134,6 @@ USE_TZ = True
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY'),
 STRIPE_PUBLISHABLE_KEY = os.getenv('STRIPE_PUBLISHABLE_KEY')
 
-# Detect if running in production
-# ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')  # Default is 'development'
-
-# DATABASE CONFIGURATION
-# if ENVIRONMENT == 'production':
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST', 'localhost'), 
-        'PORT': os.getenv('DB_PORT', '5432'),
-    }
-}
-# else:  # Default to local development (SQLite)
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
