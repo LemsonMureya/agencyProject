@@ -1,0 +1,346 @@
+{% extends '../../partials/layout1.html' %}
+
+{% block content %}
+
+    <!-- ...::: Service Section Start :::... -->
+    <section class="section-service">
+        <!-- Section Background -->
+        <div class="bg-colorIvory">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="section-block mx-auto mb-10 max-w-[650px] text-center md:mb-[60px] xl:mb-20 xl:max-w-[856px]">
+                        <h2 class="jos">
+                            Build Your Business’s
+                            <span>
+                                Digital Future
+                                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="relative inline-block h-auto w-8 after:bg-black md:w-10 lg:w-[57px]" />
+                            </span>
+                        </h2>
+                        <br>
+                        <p>
+                            Your business deserves more than just a website—it needs a digital solution that drives growth and leaves a lasting impression. Here’s what we offer.
+                        </p>
+                    </div>
+                    <!-- Section Block -->
+
+                    <!-- Service List -->
+                    <ul class="grid grid-cols-1 gap-[30px] lg:grid-cols-2">
+                        <!-- Service Item -->
+                        <li class="jos group/team-item" data-jos_delay="0">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-1-service-icon-3.svg" alt="th-1-service-icon-1" width="64" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">Custom Website Development</h4>
+                                    <p class="mb-7">
+                                        Tailored, responsive, and visually stunning websites to establish your online presence. Ideal for startups, small businesses, and personal brands.                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                         <!-- Service Item -->
+                        <li class="jos" data-jos_delay="1.5">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-4-service-icon-4.svg" alt="th-1-service-icon-6" width="72" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">Web Applications</h4>
+                                    <p class="mb-7">
+                                        From dashboards to customer portals, we develop robust, feature-rich applications tailored to streamline business processes. Perfect for enterprises, SaaS platforms with advanced needs.
+                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                        <!-- Service Item -->
+                        <li class="jos" data-jos_delay="0.3">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-1-service-icon-6.svg" alt="th-1-service-icon-2" width="77" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">E-Commerce Solutions</h4>
+                                    <p class="mb-7">
+                                        Ready to sell online? We build seamless e-commerce platforms with integrated payment gateways, inventory management, and user-friendly interfaces to enhance the shopping experience.
+                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                        <!-- Service Item -->
+                        <li class="jos" data-jos_delay="0.6">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-1-service-icon-5.svg" alt="th-1-service-icon-3" width="75" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">API & Integration Services</h4>
+                                    <p class="mb-7">
+                                        We integrate third-party tools and APIs to extend your website’s functionality, such as payment systems or booking tools.
+                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                        <!-- Service Item -->
+                        <li class="jos" data-jos_delay="0.9">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-5-feature-icon-3.svg" alt="th-1-service-icon-4" width="55" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">Maintenance & Support</h4>
+                                    <p class="mb-7">
+                                        Keep your website running smoothly with our regular updates, and dedicated technical support to resolve any issues.
+                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                        <!-- Service Item -->
+                        <!-- <li class="jos" data-jos_delay="1.2">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-1-service-icon-8.svg" alt="th-1-service-icon-5" width="72" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">Social Media Ads</h4>
+                                    <p class="mb-7">
+                                        Boost your visibility with targeted social media campaigns.
+                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- Service Item -->
+                         <!-- Service Item -->
+                        <li class="jos group/team-item" data-jos_delay="2.1">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-4-service-icon-5.svg" alt="th-1-service-icon-9" width="72" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">Web Analytics & Reporting</h4>
+                                    <p class="mb-7">
+                                        Track, analyze, and optimize your digital campaigns with comprehensive dashboards.                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5">
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                        <!-- Service Item -->
+                        <li class="jos" data-jos_delay="1.8">
+                            <div class="shadow-bg group h-full">
+                                <div class="flex h-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-black bg-colorIvory p-[30px] transition duration-300 group-hover:bg-colorLightLime">
+                                    <img src="/static/img/icons/th-1-service-icon-2.svg" alt="th-1-service-icon-6" width="72" height="70" class="h-[70px] w-auto" />
+
+                                    <h4 class="mb-[15px] mt-[30px]">Free Consultation</h4>
+                                    <p class="mb-7">
+                                        Contact us today</strong> for a custom quote.
+                                    </p>
+                                    <a href="{% url 'serviceDetails' %}" class="mt-auto inline-block translate-x-0 transition-all duration-300 group-hover:translate-x-5"><img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" /></a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Service Item -->
+                    </ul>
+                    <!-- Service List -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </div>
+        <!-- Section Background -->
+    </section>
+    <!-- ...::: Service Section end :::... -->
+
+    <!-- ...::: Text Slider Section Start :::... -->
+    <div class="section-text-slider">
+        <div class="bg-black py-5">
+            <div class="horizontal-slide-from-right-to-left flex items-center gap-x-6">
+                <!-- Text Slider Item Text-->
+                <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                    Let's create new experiences
+                </div>
+                <!-- Text Slider Item Text -->
+                <!-- Text Slider Separator Icon -->
+                <div class="h-10 min-w-[42px]">
+                    <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+                </div>
+                <!-- Text Slider Separator Icon -->
+                <!-- Text Slider Item Text-->
+                <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                    Let's create new experiences
+                </div>
+                <!-- Text Slider Item Text -->
+                <!-- Text Slider Separator Icon -->
+                <div class="h-10 min-w-[42px]">
+                    <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+                </div>
+                <!-- Text Slider Separator Icon -->
+                <!-- Text Slider Item Text-->
+                <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                    Let's create new experiences
+                </div>
+                <!-- Text Slider Item Text -->
+                <!-- Text Slider Separator Icon -->
+                <div class="h-10 min-w-[42px]">
+                    <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+                </div>
+                <!-- Text Slider Separator Icon -->
+                <!-- Text Slider Item Text-->
+                <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                    Let's create new experiences
+                </div>
+                <!-- Text Slider Item Text -->
+                <!-- Text Slider Separator Icon -->
+                <div class="h-10 min-w-[42px]">
+                    <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+                </div>
+                <!-- Text Slider Separator Icon -->
+                <!-- Text Slider Item Text-->
+                <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                    Let's create new experiences
+                </div>
+                <!-- Text Slider Item Text -->
+                <!-- Text Slider Separator Icon -->
+                <div class="h-10 min-w-[42px]">
+                    <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+                </div>
+                <!-- Text Slider Separator Icon -->
+                <!-- Text Slider Item Text-->
+                <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                    Let's create new experiences
+                </div>
+                <!-- Text Slider Item Text -->
+                <!-- Text Slider Separator Icon -->
+                <div class="h-10 min-w-[42px]">
+                    <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+                </div>
+                <!-- Text Slider Separator Icon -->
+            </div>
+        </div>
+    </div>
+    <!-- ...::: Text Slider Section End :::... -->
+
+    <!-- ...::: Process Section Start :::... -->
+    <section class="section-process">
+        <!-- Section Space -->
+        <div class="section-space">
+            <!-- Section Container -->
+            <div class="container">
+                <!-- Process Area -->
+                <div class="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-2 lg:gap-x-8 xl:grid-cols-[1fr_minmax(0,0.67fr)] xxl:gap-x-[72px]">
+                    <!-- Process Area Left Block - Section Block -->
+                    <div class="section-block text-center lg:text-start">
+                        <h2 class="jos">
+                            Our
+                            <span>
+                                technical
+                                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="relative inline-block h-auto w-8 after:bg-black md:w-10 lg:w-[57px]" />
+                            </span>
+                            project workflow
+                        </h2>
+                        <div class="jos mt-6">
+                            <p class="section-para">
+                                We focus at every stage on effective communication and
+                                collaboration between the client and ensuring that the
+                                final product meets the client's objectives and
+                                expectations.
+                            </p>
+
+                            <p class="section-para">
+                                It is important to note that these are simplified steps,
+                                and the actual work process may vary depending on the
+                                complexity of the project.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Process Area Left Block - Section Block -->
+
+                    <!-- Process Area Right Block - Accordion -->
+                    <!-- Accordion List -->
+                    <ul class="jos flex flex-col gap-y-6">
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-1 accordion-item active">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header text-ColorBlack flex items-center justify-between gap-6 text-xl font-semibold">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] md:text-3xl">
+                                    01/ Consultation
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-arrow-less-down.svg" alt="icon-black-arrow-less-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[826px] opacity-80">
+                                <p class="pt-5">
+                                    We start with a discussion to understand your goals and vision, ensuring we’re aligned from the beginning.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-1 accordion-item">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header text-ColorBlack flex items-center justify-between gap-6 text-xl font-semibold">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] md:text-3xl">
+                                    02/ Design & Development
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-arrow-less-down.svg" alt="icon-black-arrow-less-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[826px] opacity-80">
+                                <p class="pt-5">
+                                    Our team designs and develops your project using the latest technologies, keeping you informed every step of the way.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-1 accordion-item">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header text-ColorBlack flex items-center justify-between gap-6 text-xl font-semibold">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] md:text-3xl">
+                                    03/ Testing & Launch
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-arrow-less-down.svg" alt="icon-black-arrow-less-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[826px] opacity-80">
+                                <p class="pt-5">
+                                    Once the project is ready, we rigorously test it for quality assurance before launching and providing support.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                    </ul>
+                    <!-- Accordion List -->
+                    <!-- Process Area Right Block - Accordion -->
+                </div>
+                <!-- Process Area -->
+            </div>
+            <!-- Section Container -->
+        </div>
+        <!-- Section Space -->
+    </section>
+    <!-- ...::: Process Section End :::... -->
+</main>
+<!--  Main Wrapper End -->
+
+{% endblock content %}

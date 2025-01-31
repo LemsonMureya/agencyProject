@@ -1,0 +1,1434 @@
+{% extends '../partials/layout1.html' %}
+
+{% block content %}
+
+        <!-- ...::: Header Section Start :::... -->
+        <header class="section-header site-header fixed top-0 z-30 w-full bg-[#FEF6E0] py-2">
+            <!-- Section Container -->
+            <div class="container">
+                <!-- Header Area -->
+                <div class="flex items-center justify-between">
+                    <!-- Header Left Block -->
+                    <div class="flex items-center gap-x-10">
+                        <!-- Header Logo -->
+                        <a href="{% url 'index' %}" class="h-auto w-auto">
+                            <img src="/static/img/logo-black.png" alt="logo-black" width="121" height="24" />
+                        </a>
+                        <!-- Header Logo -->
+                    </div>
+                    <!-- Header Left Block -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" />
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Demo
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-0">
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index' %}">Design Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index2' %}">Startup Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index3' %}">SEO Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index4' %}">Business Consultation</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index5' %}">Digital Marketing</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index6' %}">Interior Design Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index7' %}">Advertising Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index8' %}">IT Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index9' %}">Social Marketing Agency</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                    <a href="{% url 'about' %}" class="nav-link-item">About Us</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Pages
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-1">
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Services
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-2">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'service' %}">Service</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'serviceDetails' %}">Service Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Projects
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-3">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'portfolio1' %}">Project 1</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'portfolio2' %}">Project 2</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'portfolioDetails' %}">Project Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Team
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-4">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'team' %}">Team</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'teamDetails' %}">Team Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Utility
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-5">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'comingsoon' %}">Coming Soon</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'error' %}">404 Page</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Authentication
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-6">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'login' %}">Sign In</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'signup' %}">Sign Up</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'resetPassword' %}">Reset Password</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'pricing' %}" data-menu-get="h3" class="drop-trigger">Pricing
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'faq' %}" data-menu-get="h3" class="drop-trigger">FAQ’s
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'testimonial' %}" data-menu-get="h3" class="drop-trigger">Testimonial
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Blog
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-7">
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog1' %}">Blog 1</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog2' %}">Blog 2</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog3' %}">Blog 3</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog4' %}">Blog 4</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blogDetails' %}">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                    <a href="{% url 'contact' %}" class="nav-link-item">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+
+                    <!-- Header Right Block -->
+                    <div class="flex items-center gap-x-6">
+                        <a href="{% url 'contact' %}" class="group hidden rounded border-2 border-[#FF5317] bg-[#FF5317] px-6 py-3 text-base font-bold text-white lg:inline-flex lg:px-8 xl:px-[42px]">
+                            <div class="relative flex items-center justify-center overflow-hidden">
+                                <span class="translate-y-0 transition-all duration-300 group-hover:-translate-y-full">Let's talk</span>
+                                <span class="absolute translate-y-full transition-all duration-300 group-hover:translate-y-0">Let's talk</span>
+                            </div>
+                        </a>
+                        <!-- Responsive Offcanvas Menu Button -->
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span class="bg-black before:bg-black after:bg-black"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Header Right Block -->
+                </div>
+                <!-- Header Area -->
+            </div>
+            <!-- Section Container -->
+        </header>
+        <!-- ...::: Header Section End :::... -->
+
+        <!-- Main Wrapper Start -->
+        <main class="main-wrapper">
+            <!-- ...::: Hero Section Start :::... -->
+            <section class="section-hero">
+                <div class="relative">
+                    <div class="relative py-20 md:py-[100px] xl:py-[150px]">
+                        <div class="container">
+                            <!-- Hero Area -->
+                            <div class="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-[1fr_minmax(0,0.8fr)]">
+                                <!-- Hero Left Block -->
+                                <div>
+                                    <span class="mb-[30px] block text-xl font-semibold text-[#3256D2] lg:text-2xl">#No.1 Social Media Marketing Agency You Can Trust</span>
+                                    <h1 class="font-epilogue text-6xl leading-none -tracking-[3px] text-[#131313] md:text-7xl xl:text-8xl xxl:text-[130px]">
+                                        Amplifying your online presence
+                                    </h1>
+                                    <p class="mt-6 text-xl text-[#131313] xl:text-2xl">
+                                        We help businesses reach their target audience & achieve
+                                        their marketing goals through effective online promotion
+                                        strategies.
+                                    </p>
+                                    <div class="mt-[50px]">
+                                        <a href="{% url 'contact' %}" class="group inline-flex rounded border-2 border-[#FF5317] bg-[#FF5317] px-6 py-4 text-base font-semibold text-[#FEF6E0]">
+                                            <div class="relative flex items-center justify-center overflow-hidden">
+                                                <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Schedule a quick call
+                                                    <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                                </span>
+                                                <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Schedule a quick call
+                                                    <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Hero Left Block -->
+                                <!-- Hero Right Block -->
+                                <div>
+                                    <div class="static right-0 top-1/2 lg:absolute lg:max-w-[42vw] lg:-translate-y-1/2">
+                                        <div class="swiper hero-9-slider lg:ml-24">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-1.png" alt="hero-thumb-img-1" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-2.png" alt="hero-thumb-img-2" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-3.png" alt="hero-thumb-img-3" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-4.png" alt="hero-thumb-img-4" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-5.png" alt="hero-thumb-img-5" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-6.png" alt="hero-thumb-img-6" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-7.png" alt="hero-thumb-img-7" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-8.png" alt="hero-thumb-img-8" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-9.png" alt="hero-thumb-img-9" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper hero-9-slider-reverse my-6">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-1.png" alt="hero-thumb-img-1" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-2.png" alt="hero-thumb-img-2" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-3.png" alt="hero-thumb-img-3" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-4.png" alt="hero-thumb-img-4" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-5.png" alt="hero-thumb-img-5" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-6.png" alt="hero-thumb-img-6" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-7.png" alt="hero-thumb-img-7" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-8.png" alt="hero-thumb-img-8" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-9.png" alt="hero-thumb-img-9" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper hero-9-slider lg:ml-24">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-1.png" alt="hero-thumb-img-1" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-2.png" alt="hero-thumb-img-2" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-3.png" alt="hero-thumb-img-3" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-4.png" alt="hero-thumb-img-4" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-5.png" alt="hero-thumb-img-5" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-6.png" alt="hero-thumb-img-6" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-7.png" alt="hero-thumb-img-7" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-8.png" alt="hero-thumb-img-8" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img src="/static/img/images/th-9/hero-thumb-img-9.png" alt="hero-thumb-img-9" width="295" height="197" class="h-auto w-full" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hero Right Block -->
+                            </div>
+                            <!-- Hero Area -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Space -->
+            </section>
+            <!-- ...::: Hero Section End :::... -->
+
+            <!-- ...::: Client Logo Section Start :::... -->
+            <div class="section-client-logo">
+                <!-- Section Background -->
+                <div class="relative z-10 bg-[url(../img/elemnts/curve-top-light-blue-pattern.svg)] bg-cover bg-top bg-no-repeat">
+                    <!-- Section Space -->
+                    <div class="pb-[72px] pt-[100px]">
+                        <!-- Section Container -->
+                        <div class="container">
+                            <div class="mb-[60px] text-center text-[#FEF6E0]">
+                                <p class="para-lg">
+                                    We’ve helped over 200+ startups grow their business around
+                                    the world
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Section Container -->
+                        <!-- Brand Slider -->
+                        <div class="client-slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-1.png" alt="client-logo-1" width="182" height="35" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-2.png" alt="client-logo-2" width="172" height="35" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-3.png" alt="client-logo-3" width="175" height="30" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-4.png" alt="client-logo-4" width="168" height="36" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-5.png" alt="client-logo-5" width="180" height="38" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-1.png" alt="client-logo-1" width="182" height="35" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-2.png" alt="client-logo-2" width="172" height="35" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-3.png" alt="client-logo-3" width="175" height="30" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-4.png" alt="client-logo-4" width="168" height="36" />
+                                </div>
+                                <div class="swiper-slide flex justify-center">
+                                    <img src="/static/img/images/th-9/client-logo-5.png" alt="client-logo-5" width="180" height="38" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Brand Slider -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+                <!-- Section Background -->
+            </div>
+            <!-- ...::: Client Logo Section End :::... -->
+
+            <!-- ...::: Content Section Start :::... -->
+            <section class="section-content">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Content Area -->
+                        <div class="grid grid-cols-1 items-center gap-10 md:gap-14 lg:grid-cols-[minmax(0,0.6fr)_1fr] lg:gap-20 xxl:grid-cols-[minmax(0,0.8fr)_1fr] xxl:gap-28">
+                            <!-- Content Left Block -->
+                            <div class="jos relative order-2 lg:order-1" data-jos_animation="fade-left">
+                                <img src="/static/img/images/th-9/content-img-1.jpg" alt="content-img-1" width="526" height="550" class="mx-auto rounded-md" />
+                                <img src="/static/img/elemnts/th-9-content-shape-1.svg" alt="th-9-content-shape-1" width="133" height="145" class="jos absolute -left-24 -top-24 hidden xl:inline-block" data-jos_animation="fade-down" />
+
+                                <!-- Tags -->
+                                <div class="jos absolute bottom-5 right-5 rounded-[5px] bg-[#3256D2] p-[30px] pr-20 text-[#FEF6E0]" data-jos_delay="1">
+                                    <span class="mb-1 inline-flex items-center gap-x-4 font-epilogue text-[35px] font-semibold leading-none -tracking-[1px]">
+                                        25%
+                                        <img src="/static/img/images/th-9/triangle.png" alt="triangle" width="23" height="17" />
+                                    </span>
+                                    <span class="block text-xl">Increase in sales</span>
+                                </div>
+                                <!-- Tags -->
+                            </div>
+                            <!-- Content Left Block -->
+
+                            <!-- Content Right Block -->
+                            <div class="jos order-1 text-[#131313] lg:order-2" data-jos_animation="fade-right">
+                                <!-- Section Block -->
+                                <div class="mb-5">
+                                    <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                        Stay ahead of modern market competition
+                                    </h2>
+                                </div>
+                                <!-- Section Block -->
+                                <div class="mb-8 flex flex-col gap-y-10">
+                                    <p class="para-lg">
+                                        We help clients promote their products through social
+                                        media channels like Facebook, Instagram, Twitter, and
+                                        LinkedIn, etc. by understanding their brand identity,
+                                        target audience.
+                                    </p>
+                                    <p class="para-lg">
+                                        Dedicated to helping businesses harness the power of
+                                        social media to grow their online presence, & get
+                                        meaningful results.
+                                    </p>
+                                </div>
+                                <a href="{% url 'about' %}" class="group inline-flex rounded border-2 border-[#FF5317] bg-[#FF5317] px-6 py-4 text-base font-semibold text-[#FEF6E0]">
+                                    <div class="relative flex items-center justify-center overflow-hidden">
+                                        <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Discover more
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                        </span>
+                                        <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Discover more
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Content Right Block -->
+                        </div>
+                        <!-- Content Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!-- ...::: Content Section End :::... -->
+
+            <!-- ...::: Service Section Start :::... -->
+            <section class="section-service">
+                <!-- Section Space -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-md text-center md:mb-[60px] md:max-w-xl lg:mb-20 lg:max-w-3xl">
+                            <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                Our solutions help brands gain profit
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Service List -->
+                        <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                            <!-- Service Item -->
+                            <li class="jos">
+                                <div class="group flex h-full flex-col items-baseline rounded-[10px] border-[3px] border-[#131313] px-5 py-[30px]">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-auto">
+                                        <img src="/static/img/icons/th-9-service-icon-1.svg" alt="th-9-service-icon-1" width="75" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mb-6 mt-6 text-[#131313]">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-epilogue text-2xl font-semibold leading-[1.14] -tracking-[1px] lg:text-[28px]">Social media management</a>
+                                        <p class="para-lg">
+                                            Engaging with the audience to build relationships and
+                                            foster community.
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+                                    <!-- link -->
+                                    <a href="{% url 'serviceDetails' %}" class="relative mt-auto inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                        <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" width="30" height="30" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                        <img src="/static/img/icons/icon-blue-arrow-right.svg" alt="icon-blue-arrow-right" width="30" height="30" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                    </a>
+                                    <!-- link -->
+                                </div>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos">
+                                <div class="group flex h-full flex-col items-baseline rounded-[10px] border-[3px] border-[#131313] px-5 py-[30px]">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-auto">
+                                        <img src="/static/img/icons/th-9-service-icon-2.svg" alt="th-9-service-icon-2" width="72" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mb-6 mt-6 text-[#131313]">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-epilogue text-2xl font-semibold leading-[1.14] -tracking-[1px] lg:text-[28px]">Paid advertising campaigns</a>
+                                        <p class="para-lg">
+                                            Advertising campaigns on social by media platform
+                                            various ad formats.
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+                                    <!-- link -->
+                                    <a href="{% url 'serviceDetails' %}" class="relative mt-auto inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                        <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" width="30" height="30" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                        <img src="/static/img/icons/icon-blue-arrow-right.svg" alt="icon-blue-arrow-right" width="30" height="30" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                    </a>
+                                    <!-- link -->
+                                </div>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos">
+                                <div class="group flex h-full flex-col items-baseline rounded-[10px] border-[3px] border-[#131313] px-5 py-[30px]">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-auto">
+                                        <img src="/static/img/icons/th-9-service-icon-3.svg" alt="th-9-service-icon-3" width="109" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mb-6 mt-6 text-[#131313]">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-epilogue text-2xl font-semibold leading-[1.14] -tracking-[1px] lg:text-[28px]">Content creation</a>
+                                        <p class="para-lg">
+                                            We create engaging and relevant content for social media
+                                            platforms.
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+                                    <!-- link -->
+                                    <a href="{% url 'serviceDetails' %}" class="relative mt-auto inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                        <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" width="30" height="30" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                        <img src="/static/img/icons/icon-blue-arrow-right.svg" alt="icon-blue-arrow-right" width="30" height="30" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                    </a>
+                                    <!-- link -->
+                                </div>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos">
+                                <div class="group flex h-full flex-col items-baseline rounded-[10px] border-[3px] border-[#131313] px-5 py-[30px]">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-auto">
+                                        <img src="/static/img/icons/th-9-service-icon-4.svg" alt="th-9-service-icon-4" width="70" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mb-6 mt-6 text-[#131313]">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-epilogue text-2xl font-semibold leading-[1.14] -tracking-[1px] lg:text-[28px]">Social media audits</a>
+                                        <p class="para-lg">
+                                            Conduct audits of clients' existing social media
+                                            profiles & strategies.
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+                                    <!-- link -->
+                                    <a href="{% url 'serviceDetails' %}" class="relative mt-auto inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                        <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" width="30" height="30" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                        <img src="/static/img/icons/icon-blue-arrow-right.svg" alt="icon-blue-arrow-right" width="30" height="30" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                    </a>
+                                    <!-- link -->
+                                </div>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos">
+                                <div class="group flex h-full flex-col items-baseline rounded-[10px] border-[3px] border-[#131313] px-5 py-[30px]">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-auto">
+                                        <img src="/static/img/icons/th-9-service-icon-5.svg" alt="th-9-service-icon-5" width="91" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mb-6 mt-6 text-[#131313]">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-epilogue text-2xl font-semibold leading-[1.14] -tracking-[1px] lg:text-[28px]">Influencer marketing</a>
+                                        <p class="para-lg">
+                                            Collaborate with influencers and brand ambassadors
+                                            amplify reach.
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+                                    <!-- link -->
+                                    <a href="{% url 'serviceDetails' %}" class="relative mt-auto inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                        <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" width="30" height="30" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                        <img src="/static/img/icons/icon-blue-arrow-right.svg" alt="icon-blue-arrow-right" width="30" height="30" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                    </a>
+                                    <!-- link -->
+                                </div>
+                            </li>
+                            <!-- Service Item -->
+                            <!-- Service Item -->
+                            <li class="jos">
+                                <div class="group flex h-full flex-col items-baseline rounded-[10px] border-[3px] border-[#131313] px-5 py-[30px]">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-auto">
+                                        <img src="/static/img/icons/th-9-service-icon-6.svg" alt="th-9-service-icon-6" width="80" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mb-6 mt-6 text-[#131313]">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-epilogue text-2xl font-semibold leading-[1.14] -tracking-[1px] lg:text-[28px]">Training and consultation</a>
+                                        <p class="para-lg">
+                                            Training sessions and consultations to educate clients
+                                            on social media.
+                                        </p>
+                                    </div>
+                                    <!-- Content -->
+                                    <!-- link -->
+                                    <a href="{% url 'serviceDetails' %}" class="relative mt-auto inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                        <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" width="30" height="30" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                        <img src="/static/img/icons/icon-blue-arrow-right.svg" alt="icon-blue-arrow-right" width="30" height="30" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                    </a>
+                                    <!-- link -->
+                                </div>
+                            </li>
+                            <!-- Service Item -->
+                        </ul>
+                        <!-- Service List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!-- ...::: Service Section End :::... -->
+
+            <!-- ...::: Content Section Start :::... -->
+            <section class="section-content">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Content Area -->
+                        <div class="grid grid-cols-1 items-center gap-10 md:gap-14 lg:grid-cols-[1fr_minmax(0,0.6fr)] lg:gap-20 xxl:grid-cols-[1fr_minmax(0,0.8fr)] xxl:gap-28">
+                            <!-- Content Left Block -->
+                            <div class="jos text-[#131313]" data-jos_animation="fade-right">
+                                <!-- Section Block -->
+                                <div class="mb-5">
+                                    <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                        Successfully engage a large audience
+                                    </h2>
+                                </div>
+                                <!-- Section Block -->
+                                <div class="mb-12 flex flex-col gap-y-10">
+                                    <p class="para-lg">
+                                        We increase engagement with viewers by responding to lots
+                                        of comments, messages and mentions & participating in
+                                        relevant conversations to build brand loyalty and trust.
+                                    </p>
+                                </div>
+
+                                <!-- Content List -->
+                                <ul class="flex flex-col gap-y-5 text-xl font-semibold text-[#131313]">
+                                    <!-- Content Item -->
+                                    <li>
+                                        <img src="/static/img/icons/icon-orange-check.svg" alt="icon-orange-check" width="30" height="31" class="mr-1 inline-block" />
+                                        Knowledge and experience in social media marketing
+                                    </li>
+                                    <!-- Content Item -->
+                                    <!-- Content Item -->
+                                    <li>
+                                        <img src="/static/img/icons/icon-orange-check.svg" alt="icon-orange-check" width="30" height="31" class="mr-1 inline-block" />
+                                        Managing social media effectively requires time & effort
+                                    </li>
+                                    <!-- Content Item -->
+                                    <!-- Content Item -->
+                                    <li>
+                                        <img src="/static/img/icons/icon-orange-check.svg" alt="icon-orange-check" width="30" height="31" class="mr-1 inline-block" />
+                                        Effective strategies & campaigns tailored to clients'
+                                        needs
+                                    </li>
+                                    <!-- Content Item -->
+                                </ul>
+                                <!-- Content List -->
+                            </div>
+                            <!-- Content Left Block -->
+                            <!-- Content Right Block -->
+                            <div class="jos relative" data-jos_animation="fade-left">
+                                <img src="/static/img/images/th-9/content-img-2.jpg" alt="content-img-2" width="526" height="550" class="mx-auto rounded-md" />
+                                <img src="/static/img/elemnts/th-9-content-shape-2.svg" alt="th-9-content-shape-2" width="134" height="132" class="jos absolute -bottom-24 -right-24 hidden xl:inline-block" data-jos_animation="fade-down" />
+
+                                <!-- Tags -->
+                                <div class="jos absolute bottom-5 right-5 rounded-[5px] bg-[#3256D2] p-[30px] pr-20 text-[#FEF6E0]" data-jos_delay="1">
+                                    <span class="mb-1 inline-flex items-center gap-x-4 font-epilogue text-[35px] font-semibold leading-none -tracking-[1px]">
+                                        25%
+                                        <img src="/static/img/images/th-9/triangle.png" alt="triangle" width="23" height="17" />
+                                    </span>
+                                    <span class="block text-xl">Increase in sales</span>
+                                </div>
+                                <!-- Tags -->
+                            </div>
+                            <!-- Content Right Block -->
+                        </div>
+                        <!-- Content Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!-- ...::: Content Section End :::... -->
+
+            <!-- ...::: Text Slider Section Start :::... -->
+            <div class="section-text-slider">
+                <div class="bg-[#3256D2] py-5">
+                    <div class="horizontal-slide-from-right-to-left flex items-center gap-x-6 whitespace-nowrap uppercase">
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Online Marketing
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            SEO Expert
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Content Marketing
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Link Building
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Digital Strategy
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Google Rankings
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Online Marketing
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            SEO Expert
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Content Marketing
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Link Building
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Digital Strategy
+                        </div>
+                        <!-- Text Slider Item Text -->
+                        <!-- Text Slider Separator Icon -->
+                        <div class="h-auto min-w-[35px]">
+                            <img src="/static/img/elemnts/shape-white-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="35" height="35" />
+                        </div>
+                        <!-- Text Slider Separator Icon -->
+                        <!-- Text Slider Item Text-->
+                        <div class="whitespace-nowrap font-epilogue text-[35px] font-bold leading-none tracking-[1px] text-[#FEF6E0]">
+                            Google Rankings
+                        </div>
+                        <!-- Text Slider Item Text -->
+                    </div>
+                </div>
+            </div>
+            <!-- ...::: Text Slider Section End :::... -->
+
+            <!-- ...::: Pricing Section Start :::... -->
+            <section class="section-pricing">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-md text-center md:mb-[60px] md:max-w-xl lg:mb-20 lg:max-w-3xl">
+                            <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                Reasonable plans for quality service
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Pricing List -->
+                        <ul class="grid grid-cols-1 divide-y-[3px] divide-[#131313] rounded-[10px] border-[3px] border-[#131313] text-[#131313] lg:grid-cols-3 lg:gap-0 lg:divide-x-[3px] lg:divide-y-0">
+                            <!-- Pricing Item -->
+                            <li class="flex flex-col border-[#131313] p-[30px] xl:p-10">
+                                <!-- Pricing Top -->
+                                <div>
+                                    <span class="mb-[30px] block font-epilogue text-2xl font-bold xl:text-3xl">Standard Plan</span>
+                                    <span class="block font-epilogue text-6xl font-bold leading-none -tracking-[2px] xl:text-[80px]">$19.00</span>
+                                </div>
+                                <!-- Pricing Top -->
+                                <!-- Separator -->
+                                <div class="my-[30px] h-px w-full bg-[#131313]"></div>
+                                <!-- Separator -->
+
+                                <!-- Pricing Info List -->
+                                <ul class="mb-10 flex list-inside list-image-[url(../img/icons/icon-black-reply-arrow.svg)] flex-col gap-y-5 text-xl font-semibold">
+                                    <!-- Pricing Info Item -->
+                                    <li>12 posts per month</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Page monitoring & responding </li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>20 Sponsored & follower ads</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Image ads</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Advanced ad targeting</li>
+                                    <!-- Pricing Info Item -->
+                                </ul>
+                                <!-- Pricing Info List -->
+                                <a href="{% url 'pricing' %}" class="group mt-auto flex justify-center rounded border-2 border-[#131313] bg-transparent px-6 py-4 text-center text-base font-semibold text-[#131313]">
+                                    <div class="relative flex items-center justify-center overflow-hidden">
+                                        <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Select the package
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" class="invert" />
+                                        </span>
+                                        <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Select the package
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" class="invert" />
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Pricing Item -->
+                            <!-- Pricing Item -->
+                            <li class="flex flex-col border-[#131313] p-[30px] xl:p-10">
+                                <!-- Pricing Top -->
+                                <div>
+                                    <span class="mb-[30px] block font-epilogue text-2xl font-bold xl:text-3xl">Professional Plan</span>
+                                    <span class="block font-epilogue text-6xl font-bold leading-none -tracking-[2px] xl:text-[80px]">$29.00</span>
+                                </div>
+                                <!-- Pricing Top -->
+                                <!-- Separator -->
+                                <div class="my-[30px] h-px w-full bg-[#131313]"></div>
+                                <!-- Separator -->
+
+                                <!-- Pricing Info List -->
+                                <ul class="mb-10 flex list-inside list-image-[url(../img/icons/icon-black-reply-arrow.svg)] flex-col gap-y-5 text-xl font-semibold">
+                                    <!-- Pricing Info Item -->
+                                    <li>24 posts per month</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Page monitoring & responding </li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>30 Sponsored & follower ads</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Video ads</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Advanced ad targeting</li>
+                                    <!-- Pricing Info Item -->
+                                </ul>
+                                <!-- Pricing Info List -->
+                                <a href="{% url 'pricing' %}" class="group mt-auto flex justify-center rounded border-2 border-[#FF5317] bg-[#FF5317] px-6 py-4 text-center text-base font-semibold text-[#FEF6E0]">
+                                    <div class="relative flex items-center justify-center overflow-hidden">
+                                        <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Select the package
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                        </span>
+                                        <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Select the package
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Pricing Item -->
+                            <!-- Pricing Item -->
+                            <li class="flex flex-col border-[#131313] p-[30px] xl:p-10">
+                                <!-- Pricing Top -->
+                                <div>
+                                    <span class="mb-[30px] block font-epilogue text-2xl font-bold xl:text-3xl">Enterprise Plan</span>
+                                    <span class="block font-epilogue text-6xl font-bold leading-none -tracking-[2px] xl:text-[80px]">$39.00</span>
+                                </div>
+                                <!-- Pricing Top -->
+                                <!-- Separator -->
+                                <div class="my-[30px] h-px w-full bg-[#131313]"></div>
+                                <!-- Separator -->
+
+                                <!-- Pricing Info List -->
+                                <ul class="mb-10 flex list-inside list-image-[url(../img/icons/icon-black-reply-arrow.svg)] flex-col gap-y-5 text-xl font-semibold">
+                                    <!-- Pricing Info Item -->
+                                    <li>60 posts per month</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Page monitoring & responding </li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>100 Sponsored & follower ads</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Video + image ads ads</li>
+                                    <!-- Pricing Info Item -->
+                                    <!-- Pricing Info Item -->
+                                    <li>Advanced ad targeting</li>
+                                    <!-- Pricing Info Item -->
+                                </ul>
+                                <!-- Pricing Info List -->
+                                <a href="{% url 'pricing' %}" class="group mt-auto flex justify-center rounded border-2 border-[#131313] bg-transparent px-6 py-4 text-center text-base font-semibold text-[#131313]">
+                                    <div class="relative flex items-center justify-center overflow-hidden">
+                                        <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Select the package
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" class="invert" />
+                                        </span>
+                                        <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Select the package
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" class="invert" />
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- Pricing Item -->
+                        </ul>
+                        <!-- Pricing List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!-- ...::: Pricing Section End :::... -->
+
+            <!-- ...::: Testimonial Section Start :::... -->
+            <section class="section-testimonial">
+                <!-- Section Space -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mb-10 max-w-md md:mb-[60px] md:max-w-xl lg:mb-20 lg:max-w-3xl">
+                            <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                See what our users are saying
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Testimonial Slider -->
+                        <div class="swiper testimonial-slider-3">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="h-auto w-11">
+                                        <img src="/static/img/icons/icon-light-blue-quote.svg" alt="icon-light-blue-quote" width="45" height="40" />
+                                    </div>
+                                    <blockquote class="my-6 font-epilogue text-xl font-semibold leading-[1.35] -tracking-[1px] lg:text-2xl xl:text-[28px]">
+                                        “Highly recommend! for anyone looking to elevate their
+                                        social media game! From content creation to advertising,
+                                        their team handles it all with professionalism and
+                                        creativity.”
+                                    </blockquote>
+                                    <div>
+                                        <span class="block text-xl font-semibold">-Jack Liamba</span>
+                                        <span class="block text-lg">AVP of Marketing</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="h-auto w-11">
+                                        <img src="/static/img/icons/icon-light-blue-quote.svg" alt="icon-light-blue-quote" width="45" height="40" />
+                                    </div>
+                                    <blockquote class="my-6 font-epilogue text-xl font-semibold leading-[1.35] -tracking-[1px] lg:text-2xl xl:text-[28px]">
+                                        “Their team's expertise and strategic insights have helped
+                                        us reach new audiences and drive meaningful growth on
+                                        social media. We are thrilled with the great results!”
+                                    </blockquote>
+                                    <div>
+                                        <span class="block text-xl font-semibold">-Jack Liamba</span>
+                                        <span class="block text-lg">Brand Manager @KKR</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="h-auto w-11">
+                                        <img src="/static/img/icons/icon-light-blue-quote.svg" alt="icon-light-blue-quote" width="45" height="40" />
+                                    </div>
+                                    <blockquote class="my-6 font-epilogue text-xl font-semibold leading-[1.35] -tracking-[1px] lg:text-2xl xl:text-[28px]">
+                                        “Highly recommend! for anyone looking to elevate their
+                                        social media game! From content creation to advertising,
+                                        their team handles it all with professionalism and
+                                        creativity.”
+                                    </blockquote>
+                                    <div>
+                                        <span class="block text-xl font-semibold">-Jack Liamba</span>
+                                        <span class="block text-lg">AVP of Marketing</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="h-auto w-11">
+                                        <img src="/static/img/icons/icon-light-blue-quote.svg" alt="icon-light-blue-quote" width="45" height="40" />
+                                    </div>
+                                    <blockquote class="my-6 font-epilogue text-xl font-semibold leading-[1.35] -tracking-[1px] lg:text-2xl xl:text-[28px]">
+                                        “Their team's expertise and strategic insights have helped
+                                        us reach new audiences and drive meaningful growth on
+                                        social media. We are thrilled with the great results!”
+                                    </blockquote>
+                                    <div>
+                                        <span class="block text-xl font-semibold">-Jack Liamba</span>
+                                        <span class="block text-lg">Brand Manager @KKR</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slider -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!-- ...::: Testimonial Section End :::... -->
+
+            <!-- ...::: FAQ Section Start :::... -->
+            <section class="section-faq">
+                <!-- Section Space -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-md text-center md:mb-[60px] md:max-w-xl lg:mb-20 lg:max-w-3xl">
+                            <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                Freely ask us for more information
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Accordion List-->
+                        <ul class="flex flex-col divide-y divide-[#131313]/10">
+                            <!-- Accordion Item -->
+                            <li class="accordion-item-style-6 accordion-item active group rounded-[10px] p-[30px]">
+                                <!-- Accordion Header -->
+                                <div class="accordion-header flex items-center justify-between gap-6">
+                                    <button class="flex-1 text-left font-epilogue text-2xl font-semibold leading-[1.35] -tracking-[1px] xl:text-[28px]">
+                                        Q: How can a social media marketing agency help my
+                                        business?
+                                    </button>
+                                    <div class="accordion-icon flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#131313]">
+                                        <span class="inline-block h-0.5 w-3 rounded-sm bg-[#FEF6E0]"></span>
+                                        <span class="absolute inline-block h-3 w-0.5 rounded-sm bg-[#FEF6E0]"></span>
+                                    </div>
+                                </div>
+                                <!-- Accordion Header -->
+                                <!-- Accordion Body -->
+                                <div class="accordion-body max-w-[1076px]">
+                                    <p class="pt-4">
+                                        Yes! we can help your business by developing tailored
+                                        strategies to increase brand awareness, engage with your
+                                        target audience, drive website traffic, generate leads,
+                                        and ultimately boost sales and conversions.
+                                    </p>
+                                </div>
+                                <!-- Accordion Body -->
+                            </li>
+                            <!-- Accordion Item -->
+                            <!-- Accordion Item -->
+                            <li class="accordion-item-style-6 accordion-item group rounded-[10px] p-[30px]">
+                                <!-- Accordion Header -->
+                                <div class="accordion-header flex items-center justify-between gap-6">
+                                    <button class="flex-1 text-left font-epilogue text-2xl font-semibold leading-[1.35] -tracking-[1px] xl:text-[28px]">
+                                        Q: Is social media advertising worth it?
+                                    </button>
+                                    <div class="accordion-icon flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#131313]">
+                                        <span class="inline-block h-0.5 w-3 rounded-sm bg-[#FEF6E0]"></span>
+                                        <span class="absolute inline-block h-3 w-0.5 rounded-sm bg-[#FEF6E0]"></span>
+                                    </div>
+                                </div>
+                                <!-- Accordion Header -->
+                                <!-- Accordion Body -->
+                                <div class="accordion-body max-w-[1076px]">
+                                    <p class="pt-4">
+                                        Social media advertising can be a highly effective way to
+                                        reach a targeted audience and drive specific actions such
+                                        as website visits, lead generation, and product purchases.
+                                    </p>
+                                </div>
+                                <!-- Accordion Body -->
+                            </li>
+                            <!-- Accordion Item -->
+                            <!-- Accordion Item -->
+                            <li class="accordion-item-style-6 accordion-item group rounded-[10px] p-[30px]">
+                                <!-- Accordion Header -->
+                                <div class="accordion-header flex items-center justify-between gap-6">
+                                    <button class="flex-1 text-left font-epilogue text-2xl font-semibold leading-[1.35] -tracking-[1px] xl:text-[28px]">
+                                        Q: Do I need to be active on all social media platforms?
+                                    </button>
+                                    <div class="accordion-icon flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#131313]">
+                                        <span class="inline-block h-0.5 w-3 rounded-sm bg-[#FEF6E0]"></span>
+                                        <span class="absolute inline-block h-3 w-0.5 rounded-sm bg-[#FEF6E0]"></span>
+                                    </div>
+                                </div>
+                                <!-- Accordion Header -->
+                                <!-- Accordion Body -->
+                                <div class="accordion-body max-w-[1076px]">
+                                    <p class="pt-4">
+                                        We can help you identify which platforms are most relevant
+                                        to your target audience and focus your efforts there. It's
+                                        important to prioritize quality over quantity and maintain
+                                        a consistent presence on the platforms.
+                                    </p>
+                                </div>
+                                <!-- Accordion Body -->
+                            </li>
+                            <!-- Accordion Item -->
+                            <!-- Accordion Item -->
+                            <li class="accordion-item-style-6 accordion-item group rounded-[10px] p-[30px]">
+                                <!-- Accordion Header -->
+                                <div class="accordion-header flex items-center justify-between gap-6">
+                                    <button class="flex-1 text-left font-epilogue text-2xl font-semibold leading-[1.35] -tracking-[1px] xl:text-[28px]">
+                                        Q: How often should I post on social media?
+                                    </button>
+                                    <div class="accordion-icon flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#131313]">
+                                        <span class="inline-block h-0.5 w-3 rounded-sm bg-[#FEF6E0]"></span>
+                                        <span class="absolute inline-block h-3 w-0.5 rounded-sm bg-[#FEF6E0]"></span>
+                                    </div>
+                                </div>
+                                <!-- Accordion Header -->
+                                <!-- Accordion Body -->
+                                <div class="accordion-body max-w-[1076px]">
+                                    <p class="pt-4">
+                                        The frequency of posting on social media depends on
+                                        factors such as your audience preferences, the type of
+                                        content you're sharing, and the platform you're using.
+                                        Social media marketing agencies can help you.
+                                    </p>
+                                </div>
+                                <!-- Accordion Body -->
+                            </li>
+                            <!-- Accordion Item -->
+                            <!-- Accordion Item -->
+                            <li class="accordion-item-style-6 accordion-item group rounded-[10px] p-[30px]">
+                                <!-- Accordion Header -->
+                                <div class="accordion-header flex items-center justify-between gap-6">
+                                    <button class="flex-1 text-left font-epilogue text-2xl font-semibold leading-[1.35] -tracking-[1px] xl:text-[28px]">
+                                        Q: How long does it take to see results from social media
+                                        marketing efforts?
+                                    </button>
+                                    <div class="accordion-icon flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#131313]">
+                                        <span class="inline-block h-0.5 w-3 rounded-sm bg-[#FEF6E0]"></span>
+                                        <span class="absolute inline-block h-3 w-0.5 rounded-sm bg-[#FEF6E0]"></span>
+                                    </div>
+                                </div>
+                                <!-- Accordion Header -->
+                                <!-- Accordion Body -->
+                                <div class="accordion-body max-w-[1076px]">
+                                    <p class="pt-4">
+                                        The timeline for seeing results from social media
+                                        marketing efforts can vary depending on factors such as
+                                        the competitiveness of your industry, the quality of your
+                                        content, and the effectiveness of your strategies.
+                                    </p>
+                                </div>
+                                <!-- Accordion Body -->
+                            </li>
+                            <!-- Accordion Item -->
+                        </ul>
+                        <!-- Accordion List-->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </section>
+            <!-- ...::: FAQ Section End :::... -->
+        </main>
+        <!--  Main Wrapper End -->
+
+        <!-- ...::: Footer Section Start :::... -->
+        <footer class="section-footer">
+            <div class="relative z-10 bg-[url(../img/elemnts/curve-top-light-blue-pattern-2.svg)] bg-cover bg-top bg-no-repeat">
+                <!-- Footer Top -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Footer Area -->
+                        <div class="text-[#FEF6E0]">
+                            <div class="mx-auto mb-10 max-w-md text-center md:mb-[60px] md:max-w-xl lg:mb-20 lg:max-w-4xl">
+                                <h2 class="font-epilogue text-4xl leading-[1.05] md:text-5xl lg:text-6xl xl:text-[80px]">
+                                    Ready to grow your online presence?
+                                </h2>
+                                <p class="para-lg mb-10 mt-6">
+                                    Are you ready to take your online presence to the next
+                                    level? We can help you expand your reach & connect with more
+                                    people than ever before.
+                                </p>
+                                <a href="{% url 'contact' %}" class="group inline-flex rounded border-2 border-[#FF5317] bg-[#FF5317] px-6 py-4 text-base font-semibold text-[#FEF6E0]">
+                                    <div class="relative flex items-center justify-center overflow-hidden">
+                                        <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Contact us directly
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                        </span>
+                                        <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Contact us directly
+                                            <img src="/static/img/icons/cheveron-right.svg" alt="icon-cheveron-right" />
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Footer Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Top -->
+
+                <!-- Footer Center -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Footer Center Area -->
+                        <div class="flex flex-wrap justify-between gap-y-10">
+                            <!-- Footer Widget - About -->
+                            <div class="max-w-full lg:max-w-[410px]">
+                                <a href="{% url 'index' %}" class="h-auto max-w-full">
+                                    <img src="/static/img/logo-buttery-white.svg" alt="logo-buttery-white" width="121" height="24" />
+                                </a>
+                                <p class="mt-[30px] text-lg leading-[1.43] text-[#FEF6E0] lg:text-[21px]">
+                                    We are a branding agency that digitally works to help
+                                    companies grow. We have a successful track record of working
+                                    with various organizations.
+                                </p>
+                            </div>
+                            <!-- Footer Widget - About -->
+
+                            <!-- Footer Widget - Nav -->
+                            <div class="text-[#FEF6E0]">
+                                <!-- Footer Widget Title -->
+                                <span class="mb-[30px] block text-lg font-semibold leading-[1.43] lg:text-[21px]">Special Links</span>
+                                <!-- Footer Widget Title -->
+
+                                <div class="flex flex-col gap-y-4 text-lg leading-[1.43] lg:text-[21px]">
+                                    <a href="{% url 'about' %}" class="hover:text-colorRedOrange">About us</a>
+                                    <a href="{% url 'service' %}" class="hover:text-colorRedOrange">Our services</a>
+                                    <a href="{% url 'portfolio1' %}" class="hover:text-colorRedOrange">Portfolio</a>
+                                    <a href="{% url 'blog1' %}" class="hover:text-colorRedOrange">Blogs</a>
+                                    <a href="{% url 'team' %}" class="hover:text-colorRedOrange">Premium member</a>
+                                </div>
+                            </div>
+                            <!-- Footer Widget - Nav -->
+
+                            <!-- Footer Widget - Nav -->
+                            <div class="text-[#FEF6E0]">
+                                <!-- Footer Widget Title -->
+                                <span class="mb-[30px] block text-lg font-semibold leading-[1.43] lg:text-[21px]">Utility pages</span>
+                                <!-- Footer Widget Title -->
+
+                                <div class="flex flex-col gap-y-4 text-lg leading-[1.43] lg:text-[21px]">
+                                    <a href="{% url 'error' %}" class="hover:text-colorRedOrange">404 Page</a>
+                                    <a href="{% url 'comingsoon' %}" class="hover:text-colorRedOrange">Coming Soon</a>
+                                    <a href="{% url 'login' %}" class="hover:text-colorRedOrange">Sign In</a>
+                                    <a href="{% url 'signup' %}" class="hover:text-colorRedOrange">Sign Up</a>
+                                    <a href="{% url 'resetPassword' %}" class="hover:text-colorRedOrange">Reset Password</a>
+                                </div>
+                            </div>
+                            <!-- Footer Widget - Nav -->
+
+                            <!-- Footer Widget - Newsletter -->
+                            <div class="max-w-[307px] text-[#FEF6E0]">
+                                <!-- Footer Widget Title -->
+                                <span class="mb-[30px] block text-lg font-semibold leading-[1.43] lg:text-[21px]">Subscribe to our newsletter</span>
+                                <!-- Footer Widget Title -->
+
+                                <!-- Newsletter Form -->
+                                <form action="#" method="post" class="">
+                                    <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Email Address" class="mb-3 w-full rounded-[3px] border-2 border-[#FEF6E0] bg-[#3256D2] px-6 py-3 text-base font-bold text-[#FEF6E0] outline-none placeholder:text-[#FEF6E0]" required/>
+                                    <button type="submit" class="group flex w-full justify-center rounded border-2 border-[#FF5317] bg-[#FF5317] px-6 py-3 text-base font-semibold text-[#FEF6E0]">
+                                        <span class="relative flex items-center justify-center overflow-hidden">
+                                            <span class="inline-flex translate-y-0 gap-x-[10px] transition-all duration-300 group-hover:-translate-y-full">Subscribe
+                                            </span>
+                                            <span class="absolute inline-flex translate-y-full gap-x-[10px] transition-all duration-300 group-hover:translate-y-0">Subscribe
+                                            </span>
+                                        </span>
+                                    </button>
+                                </form>
+                                <!-- Newsletter Form -->
+                            </div>
+                            <!-- Footer Widget - Newsletter -->
+                        </div>
+                        <!-- Footer Center Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Center -->
+
+                <!-- Horizontal Line -->
+                <div class="horizontal-line bg-[#FCF9F0]/10"></div>
+                <!-- Horizontal Line -->
+
+                <!-- Footer Bottom -->
+                <div class="py-[35px]">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <div class="flex flex-col-reverse flex-wrap justify-center gap-x-[30px] gap-y-4 lg:flex-row lg:justify-between">
+                            <!-- Copyright Text -->
+                            <div class="text-center text-[#FEF6E0] lg:text-start">
+                                &copy; Copyright 2024, All Rights Reserved by PixcelsThemes
+                            </div>
+                            <!-- Copyright Text -->
+
+                            <!-- Social Link Item -->
+                            <div class="flex justify-center gap-3 lg:justify-normal">
+                                <!-- Social Link Item -->
+                                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-[#F6F5EF]/10 hover:bg-[#FF5317]">
+                                    <img src="/static/img/icons/icon-logo-buttery-white-twitter.svg" alt="icon-black-twitter" width="19" height="16" />
+                                </a>
+                                <!-- Social Link Item -->
+                                <!-- Social Link Item -->
+                                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-[#F6F5EF]/10 hover:bg-[#FF5317]">
+                                    <img src="/static/img/icons/icon-logo-buttery-white-facebook.svg" alt="icon-black-facebook" width="10" height="17" />
+                                </a>
+                                <!-- Social Link Item -->
+                                <!-- Social Link Item -->
+                                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-[#F6F5EF]/10 hover:bg-[#FF5317]">
+                                    <img src="/static/img/icons/icon-logo-buttery-white-instagram.svg" alt="icon-black-instagram" width="17" height="18" />
+                                </a>
+                                <!-- Social Link Item -->
+                                <!-- Social Link Item -->
+                                <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="group flex h-9 w-9 items-center justify-center rounded-[50%] bg-[#F6F5EF]/10 hover:bg-[#FF5317]">
+                                    <img src="/static/img/icons/icon-logo-buttery-white-linkedin.svg" alt="icon-black-linkedin" width="18" height="17" />
+                                </a>
+                                <!-- Social Link Item -->
+                            </div>
+                            <!-- Social Link Item -->
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Footer Bottom -->
+
+                <!-- Background Shadow Image -->
+                <div class="absolute bottom-0 -z-10">
+                    <img src="/static/img/images/th-9/footer-bg-aximo.svg" alt="footer-bg-aximo" width="1920" height="490" />
+                </div>
+                <!-- Background Shadow Image -->
+            </div>
+        </footer>
+        <!-- ...::: Footer Section End :::... -->
+         
+{% endblock content %}

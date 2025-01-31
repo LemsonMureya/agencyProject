@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+{% include  "./head.html" with css=css%}
+
+
+<body class="{{ bodyClass|default:'bg-colorIvory' }}">
+
+    <div class="page-wrapper">
+        
+        <!-- ...::: Header Section Start :::... -->
+        {% if not header %}
+
+            {% include "./header.html" %}
+        
+        {% endif %}
+        <!-- ...::: Header Section End :::... -->
+
+        {% if subTitle %}
+            <main class="main-wrapper">
+                {% include "./breadcrumb.html" with title=title subTitle=subTitle %}
+        {% endif %}
+
+        {% block content %}
+
+        {% endblock %} 
+
+        <!-- ...::: Footer Section Start :::... -->
+        {% if not footer %}
+
+            {% include "./footer.html" %}
+        
+        {% endif %}
+        <!-- ...::: Footer Section End :::... -->
+
+    </div>
+
+    {% include  "./script.html" with script=script%}
+
+
+</body>
+
+</html>

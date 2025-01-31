@@ -1,0 +1,104 @@
+{% extends '../../partials/layout1.html' %}
+
+{% block content %}
+
+<!-- ...::: Portfolio Details Section Start :::... -->
+<section class="section-portfolio">
+    <!-- Section Space -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container">
+            <!-- Portfolio Hero Image Block -->
+            <!-- <div class="overflow-hidden rounded-[31px] border-[5px] border-black">
+                <img src="{{ portfolio.image.url }}" alt="{{ portfolio.client_name }}" alt="project-details-hero-img" class="h-auto w-full" />
+            </div> -->
+            <!-- Portfolio Hero Image Block -->
+
+            <!-- Project Details Info List -->
+            <ul class="mb-10 mt-10 flex flex-wrap justify-between gap-x-5 gap-y-2 md:mb-[60px] lg:mb-20">
+                <li class="flex items-center gap-x-4">
+                    <h4>Client:</h4>
+                    <span>{{ portfolio.client_name }}</span>
+                </li>
+                <!-- <li class="flex items-center gap-x-4">
+                    <h4>Date:</h4>
+                    <span>June 16, 2024</span>
+                </li> -->
+                <li class="flex items-center gap-x-4">
+                    <h4>Duration:</h4>
+                    <span>{{ portfolio.duration }}</span>
+                </li>
+                <li class="flex items-center gap-x-4">
+                    <h4>Cost:</h4>
+                    <span>{{ portfolio.cost }} USD</span>
+                </li>
+            </ul>
+            <!-- Project Details Info List -->
+
+            <!-- Content Block -->
+            <div class="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_minmax(0,440px)]">
+                <!-- Content Left Block -->
+                <div>
+                    <!-- Section Block -->
+                    <div class="section-block mb-10">
+                        <h2 class="jos mb-6">
+                            {{ portfolio.title}}
+                            <span>
+                                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="relative inline-block h-auto w-8 after:bg-black md:w-10 lg:w-[57px]" />
+                            </span>
+                        </h2>
+
+                        <p class="section-para">
+                            {{ portfolio.description }}
+                        </p>
+                    </div>
+                    <!-- Section Block -->
+
+                    <!-- Text List -->
+                    <ul class="flex flex-col gap-y-8">
+                       
+                    </ul>
+                    <!-- Text List -->
+                </div>
+                <!-- Content Left Block -->
+                <!-- Content Right Block -->
+                <div class="mx-auto max-w-[450px] overflow-hidden rounded-[23px] border-[5px] border-black lg:mx-0 lg:max-w-full">
+                    <img src="{{ portfolio.image.url }}" alt="{{ portfolio.client_name }}" width="456" height="736" class="h-auto w-full object-cover lg:h-full" />
+                </div>
+                <!-- Content Right Block -->
+            </div>
+            <!-- Content Block -->
+
+             <!-- Gallery Section -->
+            <h3 class="text-2xl font-bold mt-12">Project Gallery</h3>
+            <div class="grid grid-cols-2 gap-6 mt-6 lg:grid-cols-3">
+                {% for image in gallery_images %}
+                    <div class="rounded-lg overflow-hidden border border-black">
+                        <img src="{{ image.image.url }}" alt="Gallery image" class="h-auto w-full object-cover" />
+                    </div>
+                {% endfor %}
+                {% if portfolio.video %}
+                    <div class="rounded-lg overflow-hidden border border-black">
+                        <video controls class="h-auto w-full object-cover">
+                            <source src="{{ portfolio.video.url }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                {% endif %}
+            </div>
+             <!-- Gallery Section End -->
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+</section>
+<!-- ...::: Portfolio Details Section End :::... -->
+
+<!-- Horizontal Line -->
+<div class="horizontal-line bg-[#E6E6E6]"></div>
+<!-- Horizontal Line -->
+
+</main>
+<!--  Main Wrapper End -->
+
+{% endblock content %}

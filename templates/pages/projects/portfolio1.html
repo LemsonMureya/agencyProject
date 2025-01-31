@@ -1,0 +1,67 @@
+{% extends '../../partials/layout1.html' %}
+
+{% block content %}
+
+        <!-- ...::: Portfolio Section Start :::... -->
+        <section class="section-portfolio">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="section-block mx-auto mb-10 max-w-[650px] text-center md:mb-[60px] xl:mb-20 xl:max-w-[856px]">
+                        <h2 class="jos">
+                            Our portfolio
+                            <span>
+                                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="relative inline-block h-auto w-8 after:bg-black md:w-10 lg:w-[57px]" />
+                            </span>
+                        </h2>
+                    </div>
+                    <!-- Section Block -->
+
+                    <!-- Portfolio List -->
+                    <!-- Project List -->
+                    <ul class="grid grid-cols-12 gap-x-6 gap-y-10">
+                        {% for portfolio in portfolios %}
+                        <!-- Project Item -->
+                        <li class="jos group col-span-12 md:col-span-6 lg:col-span-{{ portfolio.grid_size }}">
+                            <!-- Thumbnail -->
+                            <div class="relative flex h-64 w-full items-center justify-center overflow-hidden rounded-[20px] lg:h-80 xl:h-[500px]">
+                                <img src="{{ portfolio.image.url }}" alt="{{ portfolio.client_name }}" width="746" height="501" class="h-full w-full object-cover transition-all duration-300 group-hover:scale-110" />
+
+                                <a href="{% url 'portfolio_detail' portfolio.pk %}" class="absolute inline-flex h-20 w-20 scale-50 items-center justify-center rounded-[50%] bg-white text-base font-bold uppercase text-[#073D30] opacity-0 group-hover:scale-100 group-hover:opacity-100">
+                                    view
+                                </a>
+                            </div>
+                            <!-- Thumbnail -->
+                            <!-- Content -->
+                            <div class="mt-6">
+                                <a href="{% url 'portfolio_detail' portfolio.pk %}" class="w-full font-libreBaskerville text-2xl font-bold leading-[1.4] -tracking-[0.5px] text-[#221F1A] lg:text-[30px]">{{ portfolio.title}}</a>
+                                <div class="mt-4 flex flex-wrap gap-x-8 gap-y-4 text-[#0C0C0C]">
+                                    <a href="{% url 'portfolio_detail' portfolio.pk %}" class="relative after:absolute after:left-[calc(100%+16px)] after:top-1/2 after:h-2 after:w-2 after:-translate-y-1/2 after:rounded-[50%] after:bg-[#0C0C0C] last-of-type:after:hidden">{{ portfolio.client_name }}</a>
+                                    <a href="{% url 'portfolio_detail' portfolio.pk %}" class="relative after:absolute after:left-[calc(100%+16px)] after:top-1/2 after:h-2 after:w-2 after:-translate-y-1/2 after:rounded-[50%] after:bg-[#0C0C0C] last-of-type:after:hidden">{{ portfolio.category }}</a>
+                                </div>
+                            </div>
+                            <!-- Content -->
+                        </li>
+                        {% endfor %}
+                        <!-- Project Item -->
+                    </ul>
+                    <!-- Project List -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+            </section>
+             <!-- ...::: Project Section End :::... -->
+            <!-- Portfolio List -->
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+</section>
+<!-- ...::: Portfolio Section End :::... -->
+</main>
+<!--  Main Wrapper End -->
+  
+{% endblock content %}

@@ -1,0 +1,323 @@
+{% extends '../partials/layout1.html' %}
+
+
+{% block content %}
+
+<!--...::: Pricing Section Start :::... -->
+<section class="section-pricing">
+    <!-- Section Space -->
+    <div class="section-space">
+        <!-- Section Container -->
+        <div class="container">
+            <!-- Section Block -->
+            <div class="section-block mx-auto mb-10 max-w-[650px] text-center md:mb-[60px] xl:mb-20 xl:max-w-[856px]">
+                <h2 class="jos">
+                    Affordable Plans Tailored for Your Business
+                        <span>
+                            Success
+                        <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="relative inline-block h-auto w-8 after:bg-black md:w-10 lg:w-[57px]" />
+                    </span>
+                </h2>
+            </div>
+            <!-- Section Block -->
+
+            <!-- Pricing Area -->
+            <div>
+                <!-- Pricing Button Block -->
+                 <div class="my-[50px] flex flex-row items-center justify-center gap-6"> 
+                    <!-- <span class="font-bold">Billed Monthly</span>  -->
+
+                    <!-- Toggle Button -->
+                    <!-- <label for="toggle" class="flex cursor-pointer items-center"> -->
+                        <!-- toggle -->
+                        <!-- <span class="relative inline-block h-[35px] w-[70px] rounded-[35px] border border-black"> -->
+                            <!-- hidden input -->
+                            <!-- <input id="toggle" type="checkbox" class="peer hidden" onclick="toggleSwitch()" /> -->
+                            <!-- dot -->
+                            <!-- <span class="toggle_dot absolute left-[5px] top-1/2 h-[25px] w-[25px] -translate-y-1/2 rounded-full bg-black transition-all duration-300 peer-checked:translate-x-[33px]"></span> -->
+                        <!-- </span>
+                    </label> -->
+                    <!-- Toggle Button -->
+                    <!-- <span class="font-bold">Billed Yearly</span> -->
+                </div>
+                <!-- Pricing Button Block -->
+                <!-- Pricing List -->
+                <ul class="grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+                    <!-- Pricing Item -->
+                    <li class="jos flex flex-col rounded-[20px] border-2 border-black p-[30px]" data-jos_animation="flip-left">
+                        <!-- Price Top Block -->
+                        <div class="flex flex-col gap-y-6">
+                            <h5>Starter Package</h5>
+                            <div>
+                                <span class="month display-heading display-heading-2">$900–$1999</span>
+                                <span class="annual display-heading display-heading-2 hidden">$2000 - $3200-</span>
+                            </div>
+                                <p>Perfect for small businesses or startups looking for an online presence.</p>
+                        </div>
+                        <!-- Price Top Block -->
+                        <div class="horizontal-line my-6 bg-[#E6E6E6]"></div>
+                        <!-- Price Info -->
+                        <ul class="mb-[30px] flex flex-col gap-y-4 text-lg font-semibold leading-[1.42] lg:text-[21px]">
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Fully Functional Website (Up to 4 Static Pages)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Content Upload
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Hosting/domain guidance (setup only)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Cross-Platform With Fully Responsive Design
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Basic on-page SEO setup (Optimize pages for keywords to boost organic traffic)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                3 round of revisions
+                            </li>
+                        </ul>
+                        <!-- Price Info -->
+                        <a href="{% url 'contact' %}" class="btn-outline-black mt-auto block text-center">Request a Quote</a>
+                         <!-- Stripe Checkout Button -->
+                        <!-- <button id="checkout-button-starter" class="btn-black mt-auto block text-center">
+                            Buy Now
+                        </button> -->
+                    </li>
+                    <!-- Pricing Item -->
+                    <!-- Pricing Item -->
+                    <li class="jos flex flex-col rounded-[20px] border-2 border-black p-[30px]" data-jos_animation="flip-left">
+                        <!-- Price Top Block -->
+                        <div class="flex flex-col gap-y-6">
+                            <h5>Growth Package</h5>
+                            <div>
+                                <span class="month display-heading display-heading-2">$2000–$3999</span>
+                                <span class="annual display-heading display-heading-2 hidden">$3500- $5000</span>
+                            </div>
+                            <p>Designed for growing businesses that need a stronger digital presence.</p>
+                        </div>
+                        <!-- Price Top Block -->
+                        <div class="horizontal-line my-6 bg-[#E6E6E6]"></div>
+                        <!-- Price Info -->
+                        <ul class="mb-[30px] flex flex-col gap-y-4 text-lg font-semibold leading-[1.42] lg:text-[21px]">
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Everything From The Starter Package
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Up to 7 pages with custom design elements
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                E-commerce sites(up to 7 products)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                API integrations (1–2 standard integrations e.g Stripe/Booksy)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Google Analytics (GA4)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                SEO optimization (keyword research for a few pages)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                5 rounds of revisions
+                            </li>
+                        </ul>
+                        <!-- Price Info -->
+                        <a href="{% url 'contact' %}" class="btn-outline-black mt-auto block text-center">Request a Quote</a>
+                          <!-- Stripe Checkout Button -->
+                        <!-- <button id="checkout-button-growth" class="btn-black mt-auto block text-center">
+                            Buy Now
+                        </button> -->
+                    </li>
+                    <!-- Pricing Item -->
+                    <!-- Pricing Item -->
+                    <li class="jos flex flex-col rounded-[20px] border-2 border-black p-[30px]" data-jos_animation="flip-left">
+                        <!-- Price Top Block -->
+                        <div class="flex flex-col gap-y-6">
+                            <h5>Premium Package</h5>
+                            <div>
+                                <span class="month display-heading display-heading-2">$4000+</span>
+                                <span class="annual display-heading display-heading-2 hidden">$5000+</span>
+                            </div>
+                            <p>The ultimate package for established businesses ready to scale.</p>
+                        </div>
+                        <!-- Price Top Block -->
+                        <div class="horizontal-line my-6 bg-[#E6E6E6]"></div>
+                        <!-- Price Info -->
+                        <ul class="mb-[30px] flex flex-col gap-y-4 text-lg font-semibold leading-[1.42] lg:text-[21px]">
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Everything in the Growth Package
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Up to 10 pages (fully custom design)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Advanced e-commerce functionality (inventory, shipping, dashboards) or custom integrations
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Advanced Google Analytics & Social Media account creation
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Ongoing Maintenance & Support
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Advanced SEO Optimization(competitor analysis)
+                            </li>
+                        </ul>
+                        <!-- Price Info -->
+                        <a href="{% url 'contact' %}" class="btn-outline-black mt-auto block text-center">Request a Quote</a>
+                         <!-- Stripe Checkout Button -->
+                        <!-- <button id="checkout-button-premium" class="btn-black mt-auto block text-center">
+                            Buy Now
+                        </button> -->
+                    </li>
+                    <!-- Pricing Item -->
+                      <!-- Pricing Item -->
+                    <!-- <li class="jos flex flex-col rounded-[20px] border-2 border-black p-[30px]" data-jos_animation="flip-left"> -->
+                        <!-- Price Top Block -->
+                        <!-- <div class="flex flex-col gap-y-6">
+                            <h5>Digital Marketing Package</h5>
+                            <div>
+                                <span class="month display-heading display-heading-2">From $399</span> -->
+                                <!-- <span class="annual display-heading display-heading-2 hidden">$5000+</span> -->
+                            <!-- </div>
+                            <p>Amplify your reach with tailored marketing solutions designed to drive results.</p>
+                        </div> -->
+                        <!-- Price Top Block -->
+                        <!-- <div class="horizontal-line my-6 bg-[#E6E6E6]"></div> -->
+                        <!-- Price Info -->
+                        <!-- <ul class="mb-[30px] flex flex-col gap-y-4 text-lg font-semibold leading-[1.42] lg:text-[21px]">
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Social Media Ads Management (Facebook, Instagram, LinkedIn, YouTube)
+                            </li>
+                            <li class="relative pl-11 before:absolute before:left-0 before:top-0 before:h-[30px] before:w-[30px] before:bg-[url(../img/icons/icon-lime-lemon-round-check.svg)]">
+                                Web Analytics & Reporting (Google Analytics (GA4), Meta Ads Manager)
+                            </li>
+                        </ul> -->
+                        <!-- Price Info -->
+                        <!-- <a href="#" class="btn-outline-black mt-auto block text-center">Select the package</a> -->
+                    <!-- </li> -->
+                    <!-- Pricing Item -->
+                </ul>
+                <!-- Pricing List -->
+            </div>
+            <!-- Pricing Area -->
+        </div>
+        <!-- Section Container -->
+    </div>
+    <!-- Section Space -->
+</section>
+<!--...::: Pricing Section End :::... -->
+
+<!-- ...::: Text Slider Section Start :::... -->
+<div class="section-text-slider section-space-bottom">
+    <div class="bg-black py-5">
+        <div class="horizontal-slide-from-right-to-left flex items-center gap-x-6">
+            <!-- Text Slider Item Text-->
+            <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                Let's create new experiences
+            </div>
+            <!-- Text Slider Item Text -->
+            <!-- Text Slider Separator Icon -->
+            <div class="h-10 min-w-[42px]">
+                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+            </div>
+            <!-- Text Slider Separator Icon -->
+            <!-- Text Slider Item Text-->
+            <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                Let's create new experiences
+            </div>
+            <!-- Text Slider Item Text -->
+            <!-- Text Slider Separator Icon -->
+            <div class="h-10 min-w-[42px]">
+                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+            </div>
+            <!-- Text Slider Separator Icon -->
+            <!-- Text Slider Item Text-->
+            <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                Let's create new experiences
+            </div>
+            <!-- Text Slider Item Text -->
+            <!-- Text Slider Separator Icon -->
+            <div class="h-10 min-w-[42px]">
+                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+            </div>
+            <!-- Text Slider Separator Icon -->
+            <!-- Text Slider Item Text-->
+            <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                Let's create new experiences
+            </div>
+            <!-- Text Slider Item Text -->
+            <!-- Text Slider Separator Icon -->
+            <div class="h-10 min-w-[42px]">
+                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+            </div>
+            <!-- Text Slider Separator Icon -->
+            <!-- Text Slider Item Text-->
+            <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                Let's create new experiences
+            </div>
+            <!-- Text Slider Item Text -->
+            <!-- Text Slider Separator Icon -->
+            <div class="h-10 min-w-[42px]">
+                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+            </div>
+            <!-- Text Slider Separator Icon -->
+            <!-- Text Slider Item Text-->
+            <div class="whitespace-nowrap font-syne text-[35px] font-bold leading-none tracking-[1px] text-colorLightLime">
+                Let's create new experiences
+            </div>
+            <!-- Text Slider Item Text -->
+            <!-- Text Slider Separator Icon -->
+            <div class="h-10 min-w-[42px]">
+                <img src="/static/img/elemnts/shape-light-lime-5-arms-star.svg" alt="shape-light-lime-5-arms-star" width="74" height="70" class="h-10 w-auto" />
+            </div>
+            <!-- Text Slider Separator Icon -->
+        </div>
+    </div>
+</div>
+<!-- ...::: Text Slider Section End :::... -->
+
+<!-- Horizontal Line -->
+<div class="horizontal-line bg-[#e6e6e6]"></div>
+<!-- Horizontal Line -->
+
+</main>
+<!--  Main Wrapper End -->
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    const stripe = Stripe("{{ stripe_publishable_key }}");
+
+    // Event listeners for each package button
+    document.getElementById("checkout-button-starter").addEventListener("click", function () {
+        initiateCheckout("starter");
+    });
+
+    document.getElementById("checkout-button-growth").addEventListener("click", function () {
+        initiateCheckout("growth");
+    });
+
+    document.getElementById("checkout-button-premium").addEventListener("click", function () {
+        initiateCheckout("premium");
+    });
+
+    function initiateCheckout(packageId) {
+        fetch(`/checkout/${packageId}/`, {
+            method: "POST",
+            headers: {
+                "X-CSRFToken": "{{ csrf_token }}",
+            },
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    stripe.redirectToCheckout({ sessionId: data.id });
+                }
+            })
+            .catch((error) => console.error("Error:", error));
+    }
+</script>
+
+{% endblock content %}

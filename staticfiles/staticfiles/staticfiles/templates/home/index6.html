@@ -1,0 +1,1092 @@
+{% extends '../partials/layout1.html' %}
+
+
+{% block content %}
+
+    <!-- ...::: Header Section Start :::... -->
+    <header class="section-header site-header fixed top-0 z-30 w-full bg-[#F3EDE8] py-2">
+        <!-- Section Container -->
+        <div class="container">
+            <!-- Header Area -->
+            <div class="flex items-center justify-between">
+                <!-- Header Left Block -->
+                <div class="flex items-center gap-x-10">
+                    <!-- Header Logo -->
+                    <a href="{% url 'index' %}" class="h-auto w-auto">
+                        <img src="/static/img/logo-black.png" alt="logo-black" width="121" height="24" />
+                    </a>
+                    <!-- Header Logo -->
+                </div>
+                <!-- Header Left Block -->
+
+                <!-- Header Navigation -->
+                <div class="menu-block-wrapper">
+                    <div class="menu-overlay"></div>
+                    <nav class="menu-block" id="append-menu-header">
+                        <div class="mobile-menu-head">
+                            <div class="go-back">
+                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" />
+                            </div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="site-menu-main">
+                            <li class="nav-item nav-item-has-children">
+                                <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Demo
+                                    <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                </a>
+                                <ul class="sub-menu" id="submenu-0">
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index' %}">Design Agency</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index2' %}">Startup Agency</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index3' %}">SEO Agency</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index4' %}">Business Consultation</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index5' %}">Digital Marketing</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index6' %}">Interior Design Agency</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index7' %}">Advertising Agency</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index8' %}">IT Agency</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'index9' %}">Social Marketing Agency</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                <a href="{% url 'about' %}" class="nav-link-item">About Us</a>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Pages
+                                    <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                </a>
+                                <ul class="sub-menu" id="submenu-1">
+                                    <li class="sub-menu--item nav-item-has-children">
+                                        <a href="#" data-menu-get="h3" class="drop-trigger">Services
+                                            <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                        </a>
+                                        <ul class="sub-menu shape-none" id="submenu-2">
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'service' %}">Service</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'serviceDetails' %}">Service Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item nav-item-has-children">
+                                        <a href="#" data-menu-get="h3" class="drop-trigger">Projects
+                                            <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                        </a>
+                                        <ul class="sub-menu shape-none" id="submenu-3">
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'portfolio1' %}">Project 1</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'portfolio2' %}">Project 2</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'portfolioDetails' %}">Project Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item nav-item-has-children">
+                                        <a href="#" data-menu-get="h3" class="drop-trigger">Team
+                                            <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                        </a>
+                                        <ul class="sub-menu shape-none" id="submenu-4">
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'team' %}">Team</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'teamDetails' %}">Team Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item nav-item-has-children">
+                                        <a href="#" data-menu-get="h3" class="drop-trigger">Utility
+                                            <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                        </a>
+                                        <ul class="sub-menu shape-none" id="submenu-5">
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'comingsoon' %}">Coming Soon</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'error' %}">404 Page</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item nav-item-has-children">
+                                        <a href="#" data-menu-get="h3" class="drop-trigger">Authentication
+                                            <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                        </a>
+                                        <ul class="sub-menu shape-none" id="submenu-6">
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'login' %}">Sign In</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'signup' %}">Sign Up</a>
+                                            </li>
+                                            <li class="sub-menu--item">
+                                                <a href="{% url 'resetPassword' %}">Reset Password</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'pricing' %}" data-menu-get="h3" class="drop-trigger">Pricing
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'faq' %}" data-menu-get="h3" class="drop-trigger">FAQ’s
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'testimonial' %}" data-menu-get="h3" class="drop-trigger">Testimonial
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-has-children">
+                                <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Blog
+                                    <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                </a>
+                                <ul class="sub-menu" id="submenu-7">
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'blog1' %}">Blog 1</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'blog2' %}">Blog 2</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'blog3' %}">Blog 3</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'blog4' %}">Blog 4</a>
+                                    </li>
+                                    <li class="sub-menu--item">
+                                        <a href="{% url 'blogDetails' %}">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                <a href="{% url 'contact' %}" class="nav-link-item">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Header Navigation -->
+
+                <!-- Header Right Block -->
+                <div class="flex items-center gap-x-6">
+                    <a href="{% url 'contact' %}" class="hidden rounded-[50px] border-2 border-[#2C2C2C] bg-[#02854C] px-7 py-2 text-center font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#2C2C2C] transition-all duration-300 hover:shadow-none lg:inline-block">Contact Us</a>
+                    <!-- Responsive Offcanvas Menu Button -->
+                    <div class="block lg:hidden">
+                        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                            <span class="bg-black before:bg-black after:bg-black"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Header Right Block -->
+            </div>
+            <!-- Header Area -->
+        </div>
+        <!-- Section Container -->
+    </header>
+    <!-- ...::: Header Section End :::... -->
+
+    <!-- Main Wrapper Start -->
+    <main class="main-wrapper">
+        <!-- ...::: Hero Section Start :::... -->
+        <div class="section-hero">
+            <div class="relative z-10 bg-[#F3EDE8]">
+                <div class="pb-20 pt-28 lg:pt-40 xl:pb-64 xl:pt-[195px] xxl:pb-[460px]">
+                    <div class="container">
+                        <!-- Hero Area -->
+                        <div class="text-[#2C2C2C]">
+                            <div class="mb-8 font-playfairDisplay text-4xl font-bold leading-[1.2] -tracking-[0.5px] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] xl:leading-[1.02] xxl:text-[120px] xxl:leading-none">
+                                Tailored interior
+                                <!-- Animate Slider -->
+                                <div class="hidden w-48 overflow-hidden rounded-[100px] bg-[#D68BE7] py-4 md:inline-block lg:w-[345px] xl:py-7">
+                                    <div class="horizontal-slide-from-left-to-right animation-duration-2s flex items-center justify-center gap-x-6 whitespace-nowrap">
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px]" />
+                                    </div>
+                                </div>
+                                <!-- Animate Slider -->
+                                design
+                                <div class="hidden w-40 sm:inline-block xl:h-auto xl:w-64">
+                                    <img src="/static/img/images/th-6/hero-inner-text-img.png" alt="hero-inner-text-img" width="270" height="90" />
+                                </div>
+                                that speaks to your style
+                                <!-- Animate Slider -->
+                                <div class="hidden w-80 overflow-hidden rounded-[100px] border-2 border-[#2C2C2C] bg-[#02854C] py-4 shadow-[0_4px_0_0px] shadow-[#2C2C2C] md:inline-block lg:w-[500px] xl:w-[590px] xl:py-7">
+                                    <div class="horizontal-slide-from-left-to-right animation-duration-5s flex items-center justify-center gap-x-6 whitespace-nowrap">
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">View Our Work</a>
+                                        <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                    </div>
+                                </div>
+                                <!-- Animate Slider -->
+                            </div>
+                        </div>
+                        <!-- Hero Area -->
+                    </div>
+                </div>
+                <div class="absolute left-28 top-40 -z-10 hidden animate-pulse lg:inline-block">
+                    <img src="/static/img/elemnts/shape-purple-star.svg" alt="shape-purple-star" />
+                </div>
+            </div>
+            <!-- Hero Space -->
+        </div>
+        <!-- ...::: Hero Section End :::... -->
+
+        <!-- ...::: Video Section Start :::... -->
+        <div class="section-video">
+            <div class="mx-5 pt-20 xl:pt-0 xxl:mx-[50px]">
+                <div class="xl:-mt-52 xxl:-mt-[350px]">
+                    <div class="jos relative z-10 flex items-center justify-center overflow-hidden rounded-[20px] border-4 border-[#2C2C2C]">
+                        <img src="/static/img/images/th-6/video-img.jpg" alt="video" width="1820" height="700" class="h-auto min-h-80 w-full rounded-[20px] object-cover" />
+
+                        <!-- Video Button -->
+                        <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q" aria-label="video-play" class="animate-transition absolute mx-auto inline-flex items-center justify-center">
+                            <div class="relative z-10">
+                                <img src="/static/img/images/th-6/play-button.png" alt="play-button" width="180" height="180" class="h-[180px] w-[180px] scale-50 rounded-[50%] md:scale-75 xl:scale-100" />
+                            </div>
+                        </a>
+                        <!-- Video Button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: Video Section End :::... -->
+
+        <!-- ...::: Features Section Start :::... -->
+        <section class="section-features">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Feature List -->
+                    <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <!-- Feature Item -->
+                        <li class="jos text-center">
+                            <div class="mb-8 flex justify-center">
+                                <img src="/static/img/images/th-6/features-img-1.png" alt="features-img-1" width="271" height="221" class="h-[221px] w-auto" />
+                            </div>
+                            <div>
+                                <h4 class="mb-4 font-playfairDisplay text-2xl font-bold leading-[1.2] -tracking-[0.5px] text-[#2C2C2C] lg:text-3xl xl:text-[40px]">
+                                    Aesthetic Design
+                                </h4>
+                                <p class="para-lg text-[#0C0C0C]">
+                                    Demonstrates a keen eye for design, ensuring each project
+                                    reflects a high level of aesthetic appeal.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- Feature Item -->
+                        <!-- Feature Item -->
+                        <li class="jos text-center">
+                            <div class="mb-8 flex justify-center">
+                                <img src="/static/img/images/th-6/features-img-2.png" alt="features-img-2" width="267" height="220" class="h-[221px] w-auto" />
+                            </div>
+                            <div>
+                                <h4 class="mb-4 font-playfairDisplay text-2xl font-bold leading-[1.2] -tracking-[0.5px] text-[#2C2C2C] lg:text-3xl xl:text-[40px]">
+                                    Affordable Pricing
+                                </h4>
+                                <p class="para-lg text-[#0C0C0C]">
+                                    We always ensure a balance between affordability and also
+                                    delivering a high-quality end product.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- Feature Item -->
+                        <!-- Feature Item -->
+                        <li class="jos text-center">
+                            <div class="mb-8 flex justify-center">
+                                <img src="/static/img/images/th-6/features-img-3.png" alt="features-img-3" width="280" height="200" class="h-[221px] w-auto" />
+                            </div>
+                            <div>
+                                <h4 class="mb-4 font-playfairDisplay text-2xl font-bold leading-[1.2] -tracking-[0.5px] text-[#2C2C2C] lg:text-3xl xl:text-[40px]">
+                                    Professional Team
+                                </h4>
+                                <p class="para-lg text-[#0C0C0C]">
+                                    We boast of a team of skilled interior designers,
+                                    architects & support staff with functional experience
+                                </p>
+                            </div>
+                        </li>
+                        <!-- Feature Item -->
+                    </ul>
+                    <!-- Feature List -->
+                    <div class="mt-10 flex justify-center md:mt-[60px] lg:mt-20">
+                        <a href="{% url 'about' %}" class="inline-block rounded-[50px] border-2 border-[#2C2C2C] bg-[#02854C] px-[35px] py-4 text-center font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#2C2C2C] transition-all duration-300 hover:shadow-none">Explore More Features</a>
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Features Section End :::... -->
+
+        <!-- ...::: Content Section Start :::... -->
+        <section class="section-content">
+            <!-- Section Background -->
+            <div class="relative z-10 bg-[#2C2C2C]">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-4xl md:mb-[60px] lg:mb-20 xl:max-w-5xl">
+                            <h2 class="jos text-center font-playfairDisplay text-4xl font-bold !leading-[1.11] -tracking-[0.5px] text-[#F3EDE8] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[85px]">
+                                We are professional interior design experts
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Content Area -->
+                        <div class="flex flex-col gap-y-10 text-[#F3EDE8] md:gap-y-[60px] lg:gap-y-20">
+                            <!-- Content List -->
+                            <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 xl:gap-20">
+                                <!-- Content -->
+                                <div class="jos para-lg flex flex-col gap-y-6" data-jos_animation="fade-right">
+                                    <p>
+                                        We are an experienced interior design firm offering a
+                                        professional service specializing in creating and also
+                                        enhancing interior spaces for residential, commercial or
+                                        other types of buildings.
+                                    </p>
+                                    <p>
+                                        We are a team of skilled and quality interior designers
+                                        who are trained and skilled in the art and science of
+                                        designing spaces to meet the functional and aesthetic
+                                        needs of our clients.
+                                    </p>
+                                    <!-- Counter Block -->
+                                    <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-1 xl:mt-10 xl:grid-cols-2">
+                                        <!-- Counter Item -->
+                                        <li class="flex items-end justify-center gap-x-4 md:justify-normal">
+                                            <div class="mr-4 inline-block font-playfairDisplay text-4xl font-bold text-[#D68BE7] sm:text-5xl md:text-6xl xl:text-[85px]" data-module="countup">
+                                                <span class="start-number" data-countup-number="12">15</span>+
+                                            </div>
+                                            <span class="inline-block w-44 text-lg text-[#F3EDE8] lg:text-2xl">Years of experience</span>
+                                        </li>
+                                        <!-- Counter Item -->
+                                        <!-- Counter Item -->
+                                        <li class="flex items-end justify-center gap-x-4 md:justify-normal">
+                                            <div class="mr-4 inline-block font-playfairDisplay text-4xl font-bold text-[#D68BE7] sm:text-5xl md:text-6xl xl:text-[85px]" data-module="countup">
+                                                <span class="start-number" data-countup-number="2">2</span>k
+                                            </div>
+                                            <span class="inline-block w-44 text-lg text-[#F3EDE8] lg:text-2xl">successful projects done</span>
+                                        </li>
+                                        <!-- Counter Item -->
+                                    </ul>
+                                    <!-- Counter Block -->
+                                </div>
+                                <!-- Content -->
+                                <!-- Image -->
+                                <div class="jos mx-auto" data-jos_animation="fade-left">
+                                    <img src="/static/img/images/th-6/content-img-1.jpg" alt="content-img-1" width="580" height="551" class="max-w-full rounded-[20px] lg:rotate-3" />
+                                </div>
+                                <!-- Image -->
+                            </div>
+                            <!-- Content List -->
+                            <!-- Content List -->
+                            <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 xl:gap-20">
+                                <!-- Content -->
+                                <div class="jos para-lg order-1 flex flex-col gap-y-6 lg:order-2" data-jos_animation="fade-right">
+                                    <p>
+                                        We work on various projects including homes, offices,
+                                        retail spaces, and our services include space planning,
+                                        furniture selection, color coordination, lighting
+                                        design, and overall aesthetic enhancement.
+                                    </p>
+                                    <p>
+                                        Our goal is to transform interiors into functional,
+                                        comfortable, and aesthetically pleasing environments
+                                        that reflect the client's preferences and lifestyle.
+                                    </p>
+                                    <div class="mt-10">
+                                        <a href="{% url 'about' %}" class="inline-block rounded-[50px] border-2 border-[#2C2C2C] bg-[#02854C] px-[35px] py-4 text-center font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#F3EDE8] transition-all duration-300 hover:shadow-none">Read Our Story</a>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                                <!-- Image -->
+                                <div class="jos order-2 lg:order-1" data-jos_animation="fade-left">
+                                    <img src="/static/img/images/th-6/content-img-2.jpg" alt="content-img-2" width="580" height="551" class="max-w-full -rotate-3 rounded-[20px]" />
+                                </div>
+                                <!-- Image -->
+                            </div>
+                            <!-- Content List -->
+                        </div>
+                        <!-- Content Area -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+
+                <!-- Background Element -->
+                <div class="absolute right-20 top-28 -z-10 hidden animate-pulse lg:inline-block">
+                    <img src="/static/img/elemnts/shape-purple-star.svg" alt="shape-purple-star" />
+                </div>
+                <!-- Background Element -->
+            </div>
+            <!-- Section Background -->
+        </section>
+        <!-- ...::: Content Section End :::... -->
+
+        <!-- ...::: Service Section Start :::... -->
+        <section class="section-service">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="mb-10 flex flex-col justify-between gap-10 md:mb-[60px] md:flex-row lg:mb-20">
+                        <!-- Section Block -->
+                        <div class="max-w-4xl">
+                            <h2 class="jos font-playfairDisplay text-4xl font-bold !leading-[1.11] -tracking-[0.5px] text-[#2C2C2C] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[85px]">
+                                Professional interior design solutions
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <div class="relative inline-flex items-center gap-6">
+                            <!-- If we need navigation buttons -->
+                            <div class="slider-button-prev group inline-flex h-14 w-20 items-center justify-center rounded-[50px] border-2 border-[#2C2C2C] shadow-[0_4px_0_0] shadow-[#2C2C2C] transition-all duration-300 hover:bg-[#02854C]">
+                                <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="rotate-180 opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                                <img src="/static/img/icons/icon-buttery-white-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="absolute rotate-180 opacity-0 transition-all duration-300 group-hover:opacity-100" />
+                            </div>
+                            <div class="slider-button-next group inline-flex h-14 w-20 items-center justify-center rounded-[50px] border-2 border-[#2C2C2C] shadow-[0_4px_0_0] shadow-[#2C2C2C] transition-all duration-300 hover:bg-[#02854C]">
+                                <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="transition-all duration-300" />
+                                <img src="/static/img/icons/icon-buttery-white-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="absolute opacity-0 transition-all duration-300 group-hover:opacity-100" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Container -->
+
+                <!-- Slider Wrapper -->
+                <div class="ml-auto mr-[calc(-100vw+100%)/2] max-w-[1610px]">
+                    <!-- Slider main container -->
+                    <div class="swiper service-slider-one">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="rounded-[20px] bg-[#D68BE7] p-10">
+                                    <!-- Icon -->
+                                    <div class="h-[60px] w-auto">
+                                        <img src="/static/img/icons/th-6-service-icon-1.svg" alt="th-6-service-icon-1" width="66" height="60" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mt-8">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-playfairDisplay text-3xl font-bold !leading-[1.2] text-[#2C2C2C] xl:text-[40px]">Residential Interior Design</a>
+                                        <p class="mb-8 text-[21px] leading-[1.42] text-[#0C0C0C]">
+                                            Tailored home design solutions that reflect the
+                                            client's lifestyle, preferences, and functional needs.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}">
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[20px] bg-[#F3EDE8] p-10">
+                                    <!-- Icon -->
+                                    <div class="h-[60px] w-auto">
+                                        <img src="/static/img/icons/th-6-service-icon-2.svg" alt="th-6-service-icon-2" width="61" height="60" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mt-8">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-playfairDisplay text-3xl font-bold !leading-[1.2] text-[#2C2C2C] xl:text-[40px]">Commercial Interior Design</a>
+                                        <p class="mb-8 text-[21px] leading-[1.42] text-[#0C0C0C]">
+                                            Office design solutions focusing on functionality,
+                                            color, productivity, and a professional aesthetic
+                                            look.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}">
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[20px] bg-[#02854C] p-10">
+                                    <!-- Icon -->
+                                    <div class="h-[60px] w-auto">
+                                        <img src="/static/img/icons/th-6-service-icon-3.svg" alt="th-6-service-icon-3" width="72" height="60" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mt-8">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-playfairDisplay text-3xl font-bold !leading-[1.2] text-[#F3EDE8] xl:text-[40px]">Space Planning</a>
+                                        <p class="mb-8 text-[21px] leading-[1.42] text-[#F3EDE8]">
+                                            Space planning, furniture selection, color
+                                            coordination, to create inviting and personalized
+                                            interiors.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}">
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="invert" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-[20px] bg-[#2C2C2C] p-10">
+                                    <!-- Icon -->
+                                    <div class="h-[60px] w-auto">
+                                        <img src="/static/img/icons/th-6-service-icon-4.svg" alt="th-6-service-icon-4" width="45" height="60" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="mt-8">
+                                        <a href="{% url 'serviceDetails' %}" class="mb-4 block font-playfairDisplay text-3xl font-bold !leading-[1.2] text-[#F3EDE8] xl:text-[40px]">Furniture Selection</a>
+                                        <p class="mb-8 text-[21px] leading-[1.42] text-[#F3EDE8]">
+                                            Advising on and selecting furniture that complements
+                                            the design aesthetic & requirements of the space.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}">
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="invert" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Wrapper -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Service Section End :::... -->
+
+        <!-- ...::: Project Section Start :::... -->
+        <section class="section-project">
+            <div class="relative z-10">
+                <!-- Section Space -->
+                <div class="section-space-bottom">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-3xl md:mb-[60px] lg:mb-20 xl:max-w-[910px]">
+                            <h2 class="jos text-center font-playfairDisplay text-4xl font-bold !leading-[1.11] -tracking-[0.5px] text-[#2C2C2C] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[85px]">
+                                Explore our latest interior design projects
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Project List -->
+                        <ul class="grid grid-cols-12 gap-6">
+                            <!-- Project Item -->
+                            <li class="jos col-span-12 md:col-span-6">
+                                <div class="group relative">
+                                    <img src="/static/img/images/th-6/project-img-1.jpg" alt="project-img-1" width="636" height="550" class="h-auto w-full rounded-[20px]" />
+                                    <!-- Animate Slider -->
+                                    <div class="absolute top-1/2 w-full -translate-y-1/2 overflow-hidden border-2 border-[#2C2C2C] bg-[#02854C] py-4 opacity-0 transition-all duration-300 group-hover:opacity-100 xl:py-7">
+                                        <div class="horizontal-slide-from-left-to-right animation-duration-5s flex items-center justify-center gap-x-6 whitespace-nowrap">
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Corporate Elegance</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Corporate Elegance</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Corporate Elegance</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Corporate Elegance</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Corporate Elegance</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Corporate Elegance</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        </div>
+                                    </div>
+                                    <!-- Animate Slider -->
+                                </div>
+                            </li>
+                            <!-- Project Item -->
+                            <!-- Project Item -->
+                            <li class="jos col-span-12 md:col-span-6">
+                                <div class="group relative">
+                                    <img src="/static/img/images/th-6/project-img-2.jpg" alt="project-img-2" width="636" height="550" class="h-auto w-full rounded-[20px]" />
+                                    <!-- Animate Slider -->
+                                    <div class="absolute top-1/2 w-full -translate-y-1/2 overflow-hidden border-2 border-[#2C2C2C] bg-[#02854C] py-4 opacity-0 transition-all duration-300 group-hover:opacity-100 xl:py-7">
+                                        <div class="horizontal-slide-from-left-to-right animation-duration-5s flex items-center justify-center gap-x-6 whitespace-nowrap">
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Modern Minimalism</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Modern Minimalism</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Modern Minimalism</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Modern Minimalism</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Modern Minimalism</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Modern Minimalism</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        </div>
+                                    </div>
+                                    <!-- Animate Slider -->
+                                </div>
+                            </li>
+                            <!-- Project Item -->
+                            <!-- Project Item -->
+                            <li class="jos col-span-12 md:col-span-8">
+                                <div class="group relative">
+                                    <img src="/static/img/images/th-6/project-img-3.jpg" alt="project-img-3" width="856" height="550" class="h-auto w-full rounded-[20px]" />
+                                    <!-- Animate Slider -->
+                                    <div class="absolute top-1/2 w-full -translate-y-1/2 overflow-hidden border-2 border-[#2C2C2C] bg-[#02854C] py-4 opacity-0 transition-all duration-300 group-hover:opacity-100 xl:py-7">
+                                        <div class="horizontal-slide-from-left-to-right animation-duration-5s flex items-center justify-center gap-x-6 whitespace-nowrap">
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Cultural Fusion</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Cultural Fusion</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Cultural Fusion</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Cultural Fusion</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Cultural Fusion</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Cultural Fusion</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        </div>
+                                    </div>
+                                    <!-- Animate Slider -->
+                                </div>
+                            </li>
+                            <!-- Project Item -->
+                            <!-- Project Item -->
+                            <li class="jos col-span-12 md:col-span-4">
+                                <div class="group relative">
+                                    <img src="/static/img/images/th-6/project-img-4.jpg" alt="project-img-4" width="416" height="550" class="h-auto w-full rounded-[20px]" />
+                                    <!-- Animate Slider -->
+                                    <div class="absolute top-1/2 w-full -translate-y-1/2 overflow-hidden border-2 border-[#2C2C2C] bg-[#02854C] py-4 opacity-0 transition-all duration-300 group-hover:opacity-100 xl:py-7">
+                                        <div class="horizontal-slide-from-left-to-right animation-duration-5s flex items-center justify-center gap-x-6 whitespace-nowrap">
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Wellness Haven</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Wellness Haven</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Wellness Haven</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Wellness Haven</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Wellness Haven</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                            <a href="{% url 'portfolio1' %}" class="font-body text-2xl font-semibold text-white">Wellness Haven</a>
+                                            <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" class="h-7 w-[34px] invert" />
+                                        </div>
+                                    </div>
+                                    <!-- Animate Slider -->
+                                </div>
+                            </li>
+                            <!-- Project Item -->
+                        </ul>
+                        <!-- Project List -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+
+                <!-- Background Element -->
+                <div class="absolute left-28 top-40 -z-10 hidden animate-pulse lg:inline-block">
+                    <img src="/static/img/elemnts/shape-purple-star.svg" alt="shape-purple-star" />
+                </div>
+                <!-- Background Element -->
+            </div>
+        </section>
+        <!-- ...::: Project Section End :::... -->
+
+        <!-- ...::: Testimonial Section Start :::... -->
+        <section class="section-testimonial">
+            <!-- Section Background -->
+            <div class="bg-[#F3EDE8]">
+                <!-- Section Space -->
+                <div class="section-space">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-3xl md:mb-[60px] lg:mb-20 xl:max-w-[910px]">
+                            <h2 class="jos text-center font-playfairDisplay text-4xl font-bold !leading-[1.11] -tracking-[0.5px] text-[#2C2C2C] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[85px]">
+                                Expressions of our satisfied customers
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <!-- Testimonial List -->
+                        <ul class="grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2 xl:grid-cols-3">
+                            <li class="jos">
+                                <!-- Review Icon -->
+                                <div class="mb-7 flex justify-center gap-x-1.5">
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                </div>
+                                <!-- Review Icon -->
+
+                                <!-- Content -->
+                                <div class="text-center">
+                                    <h4 class="-text-[0.5px] mb-9 font-playfairDisplay font-bold text-[#2C2C2C]">
+                                        Highly recommended!
+                                    </h4>
+                                    <blockquote class="para-lg mb-8 text-[#0C0C0C]">
+                                        “I recently used their luxury tile flooring services and
+                                        I was extremely impressed with the quality of their work
+                                        and the professionalism of their team.”
+                                    </blockquote>
+                                    <div class="font-playfairDisplay text-[21px]">
+                                        <span class="font-bold">William Jack</span>
+                                        <span>Creative Director</span>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                            </li>
+                            <li class="jos">
+                                <!-- Review Icon -->
+                                <div class="mb-7 flex justify-center gap-x-1.5">
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                </div>
+                                <!-- Review Icon -->
+
+                                <!-- Content -->
+                                <div class="text-center">
+                                    <h4 class="-text-[0.5px] mb-9 font-playfairDisplay font-bold text-[#2C2C2C]">
+                                        Highly recommended!
+                                    </h4>
+                                    <blockquote class="para-lg mb-8 text-[#0C0C0C]">
+                                        “I spoke with them to decorate my new home and I am very
+                                        happy that they did as promised. They made my dream home
+                                        a reality! I am very satisfied."
+                                    </blockquote>
+                                    <div class="font-playfairDisplay text-[21px]">
+                                        <span class="font-bold">Mark Jones </span>
+                                        <span>Businessman</span>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                            </li>
+                            <li class="jos">
+                                <!-- Review Icon -->
+                                <div class="mb-7 flex justify-center gap-x-1.5">
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                    <img src="/static/img/icons/icon-green-star.svg" alt="icon-green-star" width="32" height="30" />
+                                </div>
+                                <!-- Review Icon -->
+
+                                <!-- Content -->
+                                <div class="text-center">
+                                    <h4 class="-text-[0.5px] mb-9 font-playfairDisplay font-bold text-[#2C2C2C]">
+                                        Fantastic service!
+                                    </h4>
+                                    <blockquote class="para-lg mb-8 text-[#0C0C0C]">
+                                        “Professional service for New Yorker wall installation,
+                                        flexibility in timelines, & great prices with wonderful
+                                        results can't be found anywhere else.”
+                                    </blockquote>
+                                    <div class="font-playfairDisplay text-[21px]">
+                                        <span class="font-bold">Pitter Hoark</span>
+                                        <span>Teacher</span>
+                                    </div>
+                                </div>
+                                <!-- Content -->
+                            </li>
+                        </ul>
+                        <!-- Testimonial List -->
+
+                        <div class="mt-10 flex justify-center md:mt-[60px] lg:mt-20">
+                            <a href="{% url 'testimonial' %}" class="inline-block rounded-[50px] border-2 border-[#2C2C2C] bg-[#02854C] px-[35px] py-4 text-center font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#2C2C2C] transition-all duration-300 hover:shadow-none">Explore All Reviews</a>
+                        </div>
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </div>
+            <!-- Section Background -->
+        </section>
+        <!-- ...::: Testimonial Section End :::... -->
+
+        <!-- ...::: Blog Section Start :::... -->
+        <section class="section-blog">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="mb-10 flex flex-col flex-wrap items-center justify-between gap-10 md:mb-[60px] md:flex-row lg:mb-20">
+                        <!-- Section Block -->
+                        <div class="max-w-4xl">
+                            <h2 class="jos font-playfairDisplay text-4xl font-bold !leading-[1.11] -tracking-[0.5px] text-[#2C2C2C] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[85px]">
+                                Check out our latest articles and news
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <a href="{% url 'blog1' %}" class="inline-block rounded-[50px] border-2 border-[#2C2C2C] bg-[#02854C] px-[35px] py-4 text-center font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#2C2C2C] transition-all duration-300 hover:shadow-none">Explore All Blogs</a>
+                    </div>
+
+                    <!-- Blog List -->
+                    <ul class="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-2">
+                        <!-- Blog Item -->
+                        <li class="jos group rounded-[20px] bg-[#F3EDE8] p-6 pb-10">
+                            <!-- Thumbnail -->
+                            <a href="{% url 'blogDetails' %}" class="block overflow-hidden rounded-[20px]">
+                                <img src="/static/img/images/th-6/blog-img-1.jpg" alt="blog-img-1" class="max-w-full transition-all duration-300 group-hover:scale-110" />
+                            </a>
+                            <!-- Thumbnail -->
+                            <!-- Post Meta -->
+                            <div class="mb-4 mt-6 flex flex-wrap gap-x-8 gap-y-4 text-base font-bold text-[#0C0C0C]">
+                                <a href="{% url 'blog1' %}" class="relative after:absolute after:left-[calc(100%+16px)] after:top-1/2 after:h-2 after:w-2 after:-translate-y-1/2 after:rounded-[50%] after:bg-[#0C0C0C] last-of-type:after:hidden">Home Decoration</a>
+                                <a href="{% url 'blog1' %}" class="relative after:absolute after:left-[calc(100%+16px)] after:top-1/2 after:h-2 after:w-2 after:-translate-y-1/2 after:rounded-[50%] after:bg-[#0C0C0C] last-of-type:after:hidden">June 15, 2024</a>
+                            </div>
+                            <!-- Post Meta -->
+                            <!-- Content -->
+                            <div>
+                                <a href="{% url 'blogDetails' %}" class="mb-4 block font-playfairDisplay text-3xl font-bold leading-[1.2] -tracking-[0.5px] text-[#2C2C2C] group-hover:text-[#02854C] xl:text-[40px]">How to create a dramatic paint color for the home</a>
+                                <p class="para-lg line-clamp-2 text-[#0C0C0C]">
+                                    At the beginning of a home redesign, the client said she
+                                    found herself "making much safer choices…
+                                </p>
+                                <a href="{% url 'blogDetails' %}" class="mt-8 inline-block">
+                                    <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" />
+                                </a>
+                            </div>
+                            <!-- Content -->
+                        </li>
+                        <!-- Blog Item -->
+                        <!-- Blog Item -->
+                        <li class="jos group rounded-[20px] bg-[#F3EDE8] p-6 pb-10">
+                            <!-- Thumbnail -->
+                            <a href="{% url 'blogDetails' %}" class="block overflow-hidden rounded-[20px]">
+                                <img src="/static/img/images/th-6/blog-img-2.jpg" alt="blog-img-2" class="max-w-full transition-all duration-300 group-hover:scale-110" />
+                            </a>
+                            <!-- Thumbnail -->
+                            <!-- Post Meta -->
+                            <div class="mb-4 mt-6 flex flex-wrap gap-x-8 gap-y-4 text-base font-bold text-[#0C0C0C]">
+                                <a href="{% url 'blog1' %}" class="relative after:absolute after:left-[calc(100%+16px)] after:top-1/2 after:h-2 after:w-2 after:-translate-y-1/2 after:rounded-[50%] after:bg-[#0C0C0C] last-of-type:after:hidden">Office Interior</a>
+                                <a href="{% url 'blog1' %}" class="relative after:absolute after:left-[calc(100%+16px)] after:top-1/2 after:h-2 after:w-2 after:-translate-y-1/2 after:rounded-[50%] after:bg-[#0C0C0C] last-of-type:after:hidden">June 10, 2024</a>
+                            </div>
+                            <!-- Post Meta -->
+                            <!-- Content -->
+                            <div>
+                                <a href="{% url 'blogDetails' %}" class="mb-4 block font-playfairDisplay text-3xl font-bold leading-[1.2] -tracking-[0.5px] text-[#2C2C2C] group-hover:text-[#02854C] xl:text-[40px]">The smartest way to create an office in a small space</a>
+                                <p class="para-lg line-clamp-2 text-[#0C0C0C]">
+                                    Of course, having a dedicated home office with ample
+                                    storage, room for supplies, and a proper desk setup...
+                                </p>
+                                <a href="{% url 'blogDetails' %}" class="mt-8 inline-block">
+                                    <img src="/static/img/icons/icon-black-arrow-right.svg" alt="icon-black-arrow-right" width="34" height="28" />
+                                </a>
+                            </div>
+                            <!-- Content -->
+                        </li>
+                        <!-- Blog Item -->
+                    </ul>
+                    <!-- Blog List -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Blog Section End :::... -->
+    </main>
+    <!--  Main Wrapper End -->
+
+    <!-- ...::: Footer Section Start :::... -->
+    <footer class="section-footer">
+        <div class="relative z-10 bg-[#2C2C2C]">
+            <!-- Footer Top -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="">
+                        <!-- Section Block -->
+                        <div class="mx-auto mb-10 max-w-3xl md:mb-[60px] lg:mb-20 xl:max-w-[910px]">
+                            <h2 class="text-center font-playfairDisplay text-4xl font-bold !leading-[1.11] -tracking-[0.5px] text-[#F3EDE8] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[85px]">
+                                Want to decorate your dream space with us?
+                            </h2>
+                        </div>
+                        <!-- Section Block -->
+
+                        <div class="flex flex-wrap items-center justify-center gap-6">
+                            <a href="mailto:mthemeus@gmail.com" class="flex rounded-[50px] border-2 border-[#F3EDE8] bg-[#2C2C2C] px-8 py-4 text-center text-lg font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#F3EDE8] transition-all duration-300 hover:bg-[#02854C] hover:shadow-none lg:py-6 lg:text-2xl xxl:px-14">mthemeus@gmail.com</a>
+                            <a href="tel:+088234684900" class="flex rounded-[50px] border-2 border-[#F3EDE8] bg-[#2C2C2C] px-8 py-4 text-center text-lg font-bold text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#F3EDE8] transition-all duration-300 hover:bg-[#02854C] hover:shadow-none lg:py-6 lg:text-2xl xxl:px-14">+088-234-684900</a>
+                            <address class="flex rounded-[50px] border-2 border-[#F3EDE8] bg-[#2C2C2C] px-8 py-4 text-center text-lg font-bold not-italic text-[#F3EDE8] shadow-[0_4px_0_0] shadow-[#F3EDE8] transition-all duration-300 hover:bg-[#02854C] hover:shadow-none lg:py-6 lg:text-2xl xxl:px-14">
+                                Haward Street,10203 USA
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Top -->
+
+            <!-- Horizontal Line -->
+            <div class="horizontal-line bg-[#333333]"></div>
+            <!-- Horizontal Line -->
+
+            <!-- Footer Center -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Footer Center Area -->
+                    <div class="grid grid-cols-1 flex-wrap justify-between gap-10 text-[#F3EDE8] md:flex">
+                        <!-- Footer Widget - About -->
+                        <div class="max-w-full lg:max-w-[410px]">
+                            <a href="{% url 'index' %}" class="h-auto max-w-full">
+                                <img src="/static/img/logo-buttery-white.svg" alt="logo-white" width="121" height="24" />
+                            </a>
+                            <p class="mt-[30px] text-lg leading-[1.43] lg:text-[21px]">
+                                We are a branding agency that digitally works to help
+                                companies grow. We have a successful track record of working
+                                with various organizations.
+                            </p>
+                            <p class="mt-6 text-lg leading-[1.43] lg:text-[21px]">
+                                © Copyright 2024, All Rights Reserved by PixcelsThemes
+                            </p>
+                        </div>
+                        <!-- Footer Widget - About -->
+
+                        <!-- Footer Widget - Nav -->
+                        <div>
+                            <!-- Footer Widget Title -->
+                            <span class="mb-[30px] block text-lg font-semibold leading-[1.43] text-[#F3EDE8] lg:text-[21px]">Special Links</span>
+                            <!-- Footer Widget Title -->
+
+                            <div class="flex flex-col gap-y-4 text-lg leading-[1.43] lg:text-[21px]">
+                                <a href="{% url 'about' %}" class="underline-offset-2 hover:underline">About us</a>
+                                <a href="{% url 'service' %}" class="underline-offset-2 hover:underline">Our services</a>
+                                <a href="{% url 'portfolio1' %}" class="underline-offset-2 hover:underline">Portfolio</a>
+                                <a href="{% url 'blog1' %}" class="underline-offset-2 hover:underline">Blogs</a>
+                                <a href="{% url 'team' %}" class="underline-offset-2 hover:underline">Premium member</a>
+                            </div>
+                        </div>
+                        <!-- Footer Widget - Nav -->
+
+                        <!-- Footer Widget - Nav -->
+                        <div>
+                            <!-- Footer Widget Title -->
+                            <span class="mb-[30px] block text-lg font-semibold leading-[1.43] text-[#F3EDE8] lg:text-[21px]">Utility pages</span>
+                            <!-- Footer Widget Title -->
+
+                            <div class="flex flex-col gap-y-4 text-lg leading-[1.43] lg:text-[21px]">
+                                <a href="{% url 'error' %}" class="underline-offset-2 hover:underline">404 Page</a>
+                                <a href="{% url 'comingsoon' %}" class="underline-offset-2 hover:underline">Coming Soon</a>
+                                <a href="{% url 'login' %}" class="underline-offset-2 hover:underline">Sign In</a>
+                                <a href="{% url 'signup' %}" class="underline-offset-2 hover:underline">Sign Up</a>
+                                <a href="{% url 'resetPassword' %}" class="underline-offset-2 hover:underline">Reset Password</a>
+                            </div>
+                        </div>
+                        <!-- Footer Widget - Nav -->
+
+                        <!-- Footer Widget - Social -->
+                        <div>
+                            <!-- Footer Widget Title -->
+                            <span class="mb-[30px] block text-lg font-semibold leading-[1.43] text-[#F3EDE8] lg:text-[21px]">Socials Links</span>
+                            <!-- Footer Widget Title -->
+                            <!-- Social Link Item -->
+                            <div class="flex flex-col gap-4">
+                                <!-- Social Link Item -->
+                                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="group flex gap-4 text-lg leading-[1.43] lg:text-[21px]">
+                                    <div class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#333333] transition-all duration-300 group-hover:bg-[#02854C]">
+                                        <img src="/static/img/icons/icon-logo-buttery-white-twitter.svg" alt="icon-logo-black-twitter" width="19" height="16" class="transition-all duration-300" />
+                                    </div>
+                                    Twitter
+                                </a>
+                                <!-- Social Link Item -->
+                                <!-- Social Link Item -->
+                                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="group flex gap-4 text-lg leading-[1.43] lg:text-[21px]">
+                                    <div class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#333333] transition-all duration-300 group-hover:bg-[#02854C]">
+                                        <img src="/static/img/icons/icon-logo-buttery-white-facebook.svg" alt="icon-logo-buttery-white-facebook" width="10" height="16" class="transition-all duration-300" />
+                                    </div>
+                                    Facebook
+                                </a>
+                                <!-- Social Link Item -->
+                                <!-- Social Link Item -->
+                                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="group flex gap-4 text-lg leading-[1.43] lg:text-[21px]">
+                                    <div class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#333333] transition-all duration-300 group-hover:bg-[#02854C]">
+                                        <img src="/static/img/icons/icon-logo-buttery-white-instagram.svg" alt="icon-logo-buttery-white-instagram" width="17" height="17" class="transition-all duration-300" />
+                                    </div>
+                                    Instagram
+                                </a>
+                                <!-- Social Link Item -->
+                                <!-- Social Link Item -->
+                                <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="group flex gap-4 text-lg leading-[1.43] lg:text-[21px]">
+                                    <div class="flex h-[35px] w-[35px] items-center justify-center rounded-[50%] bg-[#333333] transition-all duration-300 group-hover:bg-[#02854C]">
+                                        <img src="/static/img/icons/icon-logo-buttery-white-linkedin.svg" alt="icon-logo-buttery-white-linkedin" width="17" height="16" class="transition-all duration-300" />
+                                    </div>
+                                    Linkedin
+                                </a>
+                                <!-- Social Link Item -->
+                            </div>
+                            <!-- Social Link Item -->
+                        </div>
+                        <!-- Footer Widget - Social -->
+                    </div>
+                    <!-- Footer Center Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Center -->
+
+            <!-- Background Element -->
+            <div class="absolute right-20 top-28 -z-10 hidden animate-pulse lg:inline-block">
+                <img src="/static/img/elemnts/shape-purple-star.svg" alt="shape-purple-star" />
+            </div>
+            <!-- Background Element -->
+        </div>
+    </footer>
+    <!-- ...::: Footer Section End :::... -->
+
+{% endblock content %}
+

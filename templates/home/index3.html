@@ -1,0 +1,1104 @@
+{% extends '../partials/layout1.html' %}
+
+
+{% block content %}
+
+    <!-- ...::: Header Section Start :::... -->
+    <header class="section-header site-header fixed top-0 z-30 w-full border-b border-black bg-[#FEFCFB] py-2">
+        <!-- Section Container -->
+        <div class="container">
+            <!-- Header Area -->
+            <div class="flex items-center justify-between">
+                <!-- Header Left Block -->
+                <div class="flex items-center gap-x-10">
+                    <!-- Header Logo -->
+                    <a href="{% url 'index' %}" class="h-auto w-auto">
+                        <img src="/static/img/logo-black.png" alt="logo-black" width="121" height="24" />
+                    </a>
+                    <!-- Header Logo -->
+
+                    <!-- Header Navigation -->
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" />
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="site-menu-main">
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Demo
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-0">
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index' %}">Design Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index2' %}">Startup Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index3' %}">SEO Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index4' %}">Business Consultation</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index5' %}">Digital Marketing</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index6' %}">Interior Design Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index7' %}">Advertising Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index8' %}">IT Agency</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'index9' %}">Social Marketing Agency</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                    <a href="{% url 'about' %}" class="nav-link-item">About Us</a>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Pages
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-1">
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Services
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-2">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'service' %}">Service</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'serviceDetails' %}">Service Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Projects
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-3">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'portfolio1' %}">Project 1</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'portfolio2' %}">Project 2</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'portfolioDetails' %}">Project Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Team
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-4">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'team' %}">Team</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'teamDetails' %}">Team Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Utility
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-5">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'comingsoon' %}">Coming Soon</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'error' %}">404 Page</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item nav-item-has-children">
+                                            <a href="#" data-menu-get="h3" class="drop-trigger">Authentication
+                                                <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" class="-rotate-90" height="4" />
+                                            </a>
+                                            <ul class="sub-menu shape-none" id="submenu-6">
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'login' %}">Sign In</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'signup' %}">Sign Up</a>
+                                                </li>
+                                                <li class="sub-menu--item">
+                                                    <a href="{% url 'resetPassword' %}">Reset Password</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'pricing' %}" data-menu-get="h3" class="drop-trigger">Pricing
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'faq' %}" data-menu-get="h3" class="drop-trigger">FAQ’s
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'testimonial' %}" data-menu-get="h3" class="drop-trigger">Testimonial
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item-has-children">
+                                    <a href="#" class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">Blog
+                                        <img src="/static/img/icons/icon-caret-down.svg" alt="icon-caret-down" width="7" height="4" class="-rotate-90 invert-0 lg:rotate-0" />
+                                    </a>
+                                    <ul class="sub-menu" id="submenu-7">
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog1' %}">Blog 1</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog2' %}">Blog 2</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog3' %}">Blog 3</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blog4' %}">Blog 4</a>
+                                        </li>
+                                        <li class="sub-menu--item">
+                                            <a href="{% url 'blogDetails' %}">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-link-item drop-trigger text-colorDark rounded-none border border-transparent">
+                                    <a href="{% url 'contact' %}" class="nav-link-item">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Header Navigation -->
+                </div>
+                <!-- Header Left Block -->
+
+                <!-- Header Right Block -->
+                <div class="flex items-center gap-x-6">
+                    <!-- Social Link Item -->
+                    <div class="hidden justify-center gap-3 md:flex lg:justify-normal">
+                        <!-- Social Link Item -->
+                        <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] border border-black hover:bg-black">
+                            <img src="/static/img/icons/icon-logo-black-twitter.svg" alt="icon-black-twitter" width="19" height="16" class="opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                            <img src="/static/img/icons/icon-logo-buttery-white-twitter.svg" alt="icon-logo-buttery-white-twitter" width="19" height="16" class="absolute opacity-0 transition-all duration-300 group-hover:opacity-100" />
+                        </a>
+                        <!-- Social Link Item -->
+                        <!-- Social Link Item -->
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] border border-black hover:bg-black">
+                            <img src="/static/img/icons/icon-black-facebook.svg" alt="icon-black-facebook" width="10" height="16" class="opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                            <img src="/static/img/icons/icon-logo-buttery-white-facebook.svg" alt="icon-logo-buttery-white-facebook" width="10" height="16" class="absolute opacity-0 transition-all duration-300 group-hover:opacity-100" />
+                        </a>
+                        <!-- Social Link Item -->
+                        <!-- Social Link Item -->
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] border border-black hover:bg-black">
+                            <img src="/static/img/icons/icon-black-instagram.svg" alt="icon-black-instagram" width="17" height="17" class="opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                            <img src="/static/img/icons/icon-logo-buttery-white-instagram.svg" alt="icon-logo-buttery-white-instagram" width="17" height="17" class="absolute opacity-0 transition-all duration-300 group-hover:opacity-100" />
+                        </a>
+                        <!-- Social Link Item -->
+                        <!-- Social Link Item -->
+                        <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="group flex h-[35px] w-[35px] items-center justify-center rounded-[50%] border border-black hover:bg-black">
+                            <img src="/static/img/icons/icon-black-linkedin.svg" alt="icon-black-linkedin" width="17" height="16" class="opacity-100 transition-all duration-300 group-hover:opacity-0" />
+                            <img src="/static/img/icons/icon-logo-buttery-white-linkedin.svg" alt="icon-logo-buttery-white-linkedin" width="17" height="16" class="absolute opacity-0 transition-all duration-300 group-hover:opacity-100" />
+                        </a>
+                        <!-- Social Link Item -->
+                    </div>
+                    <!-- Social Link Item -->
+                    <a href="{% url 'contact' %}" class="hidden items-center justify-center rounded-[50px] bg-[#FFE757] px-11 py-4 text-base font-bold hover:bg-black hover:text-[#FFE757] xl:inline-flex">Talk to an expert</a>
+
+                    <!-- Responsive Offcanvas Menu Button -->
+                    <div class="block lg:hidden">
+                        <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                            <span class="bg-colorGondola before:bg-colorGondola after:bg-colorGondola"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Header Right Block -->
+            </div>
+            <!-- Header Area -->
+        </div>
+        <!-- Section Container -->
+    </header>
+    <!-- ...::: Header Section End :::... -->
+
+    <!-- Main Wrapper Start -->
+    <main class="main-wrapper">
+        <!-- ...::: Hero Section Start :::... -->
+        <section class="section-hero">
+            <div class="relative z-10">
+                <!-- Hero Space -->
+                <div class="pb-20 lg:pb-0">
+                    <!-- Section Container -->
+                    <div class="ml-auto flex max-w-[1600px] flex-col items-center justify-between gap-10 px-10 lg:flex-row lg:pl-10 xl:px-0 xxl:gap-0">
+                        <!-- Hero Content Area -->
+                        <div class="pt-[150px] text-center lg:max-w-lg lg:pb-[130px] lg:pt-[196px] lg:text-start xl:max-w-xl xxl:max-w-[746px]">
+                            <p class="text-lg font-semibold md:text-xl lg:text-2xl">
+                                #1 SEO agency for fast-growing companies
+                            </p>
+                            <h1 class="font-familjenGrotesk text-4xl font-bold leading-none -tracking-[1px] sm:text-5xl md:text-7xl xl:text-8xl xxl:text-[130px]">
+                                Provides the best ranking experience
+                            </h1>
+                            <p class="para-lg my-[30px] md:mb-[50px]">
+                                We work to improve your business visibility within search
+                                engines, boost organic traffic to your website and rank for
+                                the most valuable keywords.
+                            </p>
+
+                            <form action="#" method="post" class="mx-auto mb-6 max-w-[526px] lg:mx-0">
+                                <div class="relative w-full">
+                                    <input type="email" placeholder="Enter your email address" class="w-full rounded-[50px] border-2 border-black px-8 py-4 text-base font-bold placeholder:text-black sm:pr-44" required/>
+                                    <button type="submit" class="static bottom-1 right-1 top-1 mt-5 w-full items-center justify-center rounded-[50px] bg-[#FFE757] px-9 py-4 text-base font-bold hover:bg-black hover:text-[#FFE757] sm:absolute sm:mt-0 sm:inline-flex sm:w-auto">
+                                        Get started
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="flex flex-wrap items-center justify-center gap-3 text-lg font-semibold lg:justify-start">
+                                <div class="flex items-center gap-x-1">
+                                    <img src="/static/img/icons/icon-trustpilot.svg" alt="icon-trustpilot" width="26" height="24" />
+                                    <img src="/static/img/icons/icon-trustpilot.svg" alt="icon-trustpilot" width="26" height="24" />
+                                    <img src="/static/img/icons/icon-trustpilot.svg" alt="icon-trustpilot" width="26" height="24" />
+                                    <img src="/static/img/icons/icon-trustpilot.svg" alt="icon-trustpilot" width="26" height="24" />
+                                    <img src="/static/img/icons/icon-trustpilot.svg" alt="icon-trustpilot" width="26" height="24" />
+                                </div>
+                                <span>4.8/5 stars based on 1K client reviews</span>
+                            </div>
+                        </div>
+                        <!-- Hero Content Area -->
+
+                        <!-- Hero Image Block -->
+                        <div class="relative right-0">
+                            <!-- Hero Image -->
+                            <img src="/static/img/images/th-3/hero-img.png" alt="hero-img" width="762" height="927" class="ml-auto" />
+                            <!-- Hero Image -->
+                            <!-- Hero Image Shape -->
+                            <img src="/static/img/elemnts/shape-purple-blue-monitor.svg" alt="shape-purple-blue-monitor" width="125" height="109" class="absolute bottom-36 right-24 hidden sm:inline-block" />
+                            <!-- Hero Image Shape -->
+                            <!-- Hero Image Shape -->
+                            <img src="/static/img/elemnts/shape-purple-blue-polygon-star.svg" alt="shape-purple-blue-polygon-star" width="317" height="317" class="absolute -left-24 bottom-14 -z-10" />
+                            <!-- Hero Image Shape -->
+                        </div>
+                        <!-- Hero Image Block -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Hero Space -->
+            </div>
+        </section>
+        <!-- ...::: Hero Section End :::... -->
+
+        <!-- ...::: Count Section Start :::... -->
+        <div class="section-count">
+            <!-- Section Background -->
+            <div class="bg-black">
+                <!-- Section Space -->
+                <div class="py-10 md:py-[60px] lg:py-20">
+                    <!-- Section Container -->
+                    <div class="container">
+                        <span class="para-large mb-[50px] block text-center text-white">Our results speak for our ability to succeed</span>
+
+                        <!-- Counter Block -->
+                        <ul class="jos grid grid-cols-1 justify-between gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:flex">
+                            <li>
+                                <div class="flex items-end gap-x-6 font-familjenGrotesk text-6xl font-bold leading-none text-[#8D7DFF] md:text-7xl xxl:text-[85px]" data-module="countup">
+                                    <span class="inline-block h-5 w-5 -translate-y-4 rounded-[50%] bg-[#8D7DFF]"></span>
+                                    <span class="start-number" data-countup-number="13">13</span>+
+                                </div>
+                                <span class="mt-2 inline-block translate-x-12 text-white">Years of experience</span>
+                            </li>
+                            <li>
+                                <div class="flex items-end gap-x-6 font-familjenGrotesk text-6xl font-bold leading-none text-[#FF7545] md:text-7xl xxl:text-[85px]" data-module="countup">
+                                    <span class="inline-block h-5 w-5 -translate-y-4 rounded-[50%] bg-[#FF7545]"></span>
+                                    <span class="start-number" data-countup-number="85">85</span>%
+                                </div>
+                                <span class="mt-2 inline-block translate-x-12 text-white">Average Conversion Rate</span>
+                            </li>
+                            <li>
+                                <div class="flex items-end gap-x-6 font-familjenGrotesk text-6xl font-bold leading-none text-[#FF94FF] md:text-7xl xxl:text-[85px]" data-module="countup">
+                                    <span class="inline-block h-5 w-5 -translate-y-4 rounded-[50%] bg-[#FF94FF]"></span>
+                                    <span class="start-number" data-countup-number="60">60</span>M
+                                </div>
+                                <span class="mt-2 inline-block translate-x-12 text-white">Traffic Generated</span>
+                            </li>
+                            <li>
+                                <div class="flex items-end gap-x-6 font-familjenGrotesk text-6xl font-bold leading-none text-[#FFE757] md:text-7xl xxl:text-[85px]" data-module="countup">
+                                    <span class="inline-block h-5 w-5 -translate-y-4 rounded-[50%] bg-[#FFE757]"></span>
+                                    <span class="start-number" data-countup-number="100">100</span>%
+                                </div>
+                                <span class="mt-2 inline-block translate-x-12 text-white">Client satisfaction score</span>
+                            </li>
+                        </ul>
+                        <!-- Counter Block -->
+                    </div>
+                    <!-- Section Container -->
+                </div>
+                <!-- Section Space -->
+            </div>
+            <!-- Section Background -->
+        </div>
+        <!-- ...::: Count Section End :::... -->
+
+        <!-- ...::: Content Section Start :::... -->
+        <section class="section-content">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Content Area -->
+                    <div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 lg:grid-cols-[minmax(0,0.85fr)_1fr] xl:gap-x-28 xxl:gap-x-32">
+                        <!-- Content Left Block -->
+                        <div class="jos relative order-2 mx-auto md:order-1 lg:mx-0" data-jos_animation="fade-left">
+                            <img src="/static/img/images/th-3/content-img-1.png" alt="content-img-1" width="532" height="484" class="max-w-full" />
+                            <!-- Image Shape -->
+                            <img src="/static/img/images/th-3/content-shape-1.png" alt="content-shape-1" width="313" height="312" class="absolute -left-32 bottom-0 hidden sm:inline-block" />
+                            <!-- Image Shape -->
+                        </div>
+                        <!-- Content Left Block -->
+                        <!-- Content Right Block -->
+                        <div class="jos order-1 md:order-2" data-jos_animation="fade-right">
+                            <div class="section-block">
+                                <h2 class="mb-6 font-familjenGrotesk text-4xl font-bold leading-none text-black md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                                    We strive for the best SEO quality
+                                </h2>
+                                <p class="section-para">
+                                    We are a leading SEO company dedicated to helping brand
+                                    grow their online presence & achieve higher search engine
+                                    rankings and improve digital performance.
+                                </p>
+
+                                <p class="section-para">
+                                    Whether you're a small local business or a global brand,
+                                    we tailor our SEO services to meet your unique needs &
+                                    goals.
+                                </p>
+
+                                <a href="{% url 'about' %}" class="mt-12 inline-flex items-center justify-center rounded-[50px] bg-[#FFE757] px-11 py-4 text-base font-bold hover:bg-black hover:text-[#FFE757]">Explore more</a>
+                            </div>
+                        </div>
+                        <!-- Content Right Block -->
+                    </div>
+                    <!-- Content Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Content Section End :::... -->
+
+        <!-- ...::: Content Section Start :::... -->
+        <section class="section-content">
+            <!-- Section Space -->
+            <div class="section-space-bottom">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Content Area -->
+                    <div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 lg:grid-cols-[1fr_minmax(0,0.7fr)] xl:gap-x-28 xxl:gap-x-32">
+                        <!-- Content Right Block -->
+                        <div class="jos" data-jos_animation="fade-right">
+                            <div class="section-block">
+                                <h2 class="mb-6 font-familjenGrotesk text-4xl font-bold leading-none text-black md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                                    Increase revenue with custom SEO
+                                </h2>
+                                <p class="section-para max-w-[636px]">
+                                    Our SEO agency will help you reach new audiences, increase
+                                    your website performance, and accelerate your reputation.
+                                </p>
+                            </div>
+
+                            <!-- Content List -->
+                            <ul class="para-large mt-[30px] flex flex-col gap-y-6 font-semibold md:mt-[50px]">
+                                <li class="flex-start flex gap-x-[10px]">
+                                    <img src="/static/img/icons/icon-yellow-badge-check-mark.svg" alt="icon-yellow-badge-check-mark" width="30" height="30" />
+                                    On-page optimizing your web pages to improve rankings
+                                </li>
+                                <li class="flex-start flex gap-x-[10px]">
+                                    <img src="/static/img/icons/icon-yellow-badge-check-mark.svg" alt="icon-yellow-badge-check-mark" width="30" height="30" />
+                                    Keyword research to identify relevant search and phrases
+                                </li>
+                                <li class="flex-start flex gap-x-[10px]">
+                                    <img src="/static/img/icons/icon-yellow-badge-check-mark.svg" alt="icon-yellow-badge-check-mark" width="30" height="30" />
+                                    Continuously monitor search engine algorithm changes
+                                </li>
+                            </ul>
+                            <!-- Content List -->
+                        </div>
+                        <!-- Content Right Block -->
+                        <!-- Content Left Block -->
+                        <div class="jos relative mx-auto lg:mx-0" data-jos_animation="fade-left">
+                            <img src="/static/img/images/th-3/content-img-2.png" alt="content-img-2" width="530" height="484" class="max-w-full" />
+                            <!-- Image Shape -->
+                            <img src="/static/img/images/th-3/content-shape-2.png" alt="content-shape-2" width="190" height="190" class="absolute -right-20 bottom-0 hidden sm:inline-block" />
+                            <!-- Image Shape -->
+                        </div>
+                        <!-- Content Left Block -->
+                    </div>
+                    <!-- Content Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Content Section End :::... -->
+
+        <!-- ...::: Service Section Start :::... -->
+        <section class="section-service">
+            <div class="relative z-10 overflow-hidden">
+                <!-- Section Background -->
+                <div class="bg-black">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container">
+                            <!-- Section Block -->
+                            <div class="section-block mx-auto mb-10 max-w-3xl md:mb-[60px] lg:mb-20">
+                                <h2 class="jos text-center font-familjenGrotesk text-4xl font-bold leading-none text-[#FEFCFB] md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                                    Our professional SEO services for you
+                                </h2>
+                            </div>
+                            <!-- Section Block -->
+
+                            <!-- Service List -->
+                            <ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                                <!-- Service Item -->
+                                <li class="jos group flex flex-col gap-6 rounded-[20px] bg-[#8D7DFF] p-10 lg:flex-row">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-20">
+                                        <img src="/static/img/icons/th-3-service-icon-1.svg" alt="th-3-service-icon-1" width="80" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="flex-1">
+                                        <h4 class="font-familjenGrotesk text-2xl leading-[1.14] tracking-[0.5px] lg:text-3xl xl:text-[35px]">
+                                            On-Page SEO
+                                        </h4>
+                                        <p class="para-lg my-6">
+                                            On-page SEO aims to improve users website content and
+                                            structure to improve its ranking on search engine
+                                            results pages.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}" class="relative inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </li>
+                                <!-- Service Item -->
+                                <!-- Service Item -->
+                                <li class="jos group flex flex-col gap-6 rounded-[20px] bg-[#FF7545] p-10 lg:flex-row">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-20">
+                                        <img src="/static/img/icons/th-3-service-icon-2.svg" alt="th-3-service-icon-2" width="80" height="80" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="flex-1">
+                                        <h4 class="font-familjenGrotesk text-2xl leading-[1.14] tracking-[0.5px] lg:text-3xl xl:text-[35px]">
+                                            Technical SEO
+                                        </h4>
+                                        <p class="para-lg my-6">
+                                            Technical SEO helps search engines crawl & index a
+                                            site more effectively. Its performance and
+                                            accessibility to search engines.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}" class="relative inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </li>
+                                <!-- Service Item -->
+                                <!-- Service Item -->
+                                <li class="jos group flex flex-col gap-6 rounded-[20px] bg-[#FF94FF] p-10 lg:flex-row">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-20">
+                                        <img src="/static/img/icons/th-3-service-icon-3.svg" alt="th-3-service-icon-3" width="80" height="81" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="flex-1">
+                                        <h4 class="font-familjenGrotesk text-2xl leading-[1.14] tracking-[0.5px] lg:text-3xl xl:text-[35px]">
+                                            Keyword Research
+                                        </h4>
+                                        <p class="para-lg my-6">
+                                            We perform keyword research to identify the most
+                                            relevant and high-traffic keywords and phrases for a
+                                            client's industry.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}" class="relative inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </li>
+                                <!-- Service Item -->
+                                <!-- Service Item -->
+                                <li class="jos group flex flex-col gap-6 rounded-[20px] bg-[#FFE757] p-10 lg:flex-row">
+                                    <!-- Icon -->
+                                    <div class="h-20 w-20">
+                                        <img src="/static/img/icons/th-3-service-icon-4.svg" alt="th-3-service-icon-4" width="80" height="81" />
+                                    </div>
+                                    <!-- Icon -->
+                                    <!-- Content -->
+                                    <div class="flex-1">
+                                        <h4 class="font-familjenGrotesk text-2xl leading-[1.14] tracking-[0.5px] lg:text-3xl xl:text-[35px]">
+                                            Content Creation
+                                        </h4>
+                                        <p class="para-lg my-6">
+                                            Content can take many forms, including blog posts,
+                                            articles, videos, infographics & high-quality and
+                                            informative content.
+                                        </p>
+                                        <a href="{% url 'serviceDetails' %}" class="relative inline-flex items-center justify-center overflow-hidden" aria-label="service-details-link">
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="translate-x-0 transition-all duration-300 group-hover:translate-x-full" />
+                                            <img src="/static/img/icons/icon-black-normal-arrow-right.svg" alt="icon-black-normal-arrow-right.svg') }}" class="absolute -translate-x-full transition-all duration-300 group-hover:translate-x-0" />
+                                        </a>
+                                    </div>
+                                    <!-- Content -->
+                                </li>
+                                <!-- Service Item -->
+                            </ul>
+                            <!-- Service List -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+                <!-- Section Background -->
+
+                <!-- Background Shape -->
+                <div class="jos absolute -right-28 -top-40 z-10" data-jos_animation="fade-left">
+                    <img src="/static/img/elemnts/shape-purple-blue-polygon-star.svg" alt="shape-purple-blue-polygon-star" width="420" height="420" />
+                </div>
+                <!-- Background Shape -->
+            </div>
+        </section>
+        <!-- ...::: Service Section End :::... -->
+
+        <!-- ...::: Content Section Start :::... -->
+        <section class="section-content">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Content Area -->
+                    <div class="grid grid-cols-1 items-center gap-x-20 gap-y-10 lg:grid-cols-[minmax(0,0.85fr)_1fr] xl:gap-x-28 xxl:gap-x-32">
+                        <!-- Content Left Block -->
+                        <div class="jos relative order-2 mx-auto md:order-1 lg:mx-0" data-jos_animation="fade-left">
+                            <img src="/static/img/images/th-3/content-img-3.png" alt="content-img-3" width="526" height="600" class="max-w-full" />
+                            <!-- Image Shape -->
+                            <img src="/static/img/images/th-3/content-shape-3.png" alt="content-shape-3" width="234" height="234" class="absolute -left-32 bottom-20 hidden sm:inline-block" />
+                            <!-- Image Shape -->
+                        </div>
+                        <!-- Content Left Block -->
+                        <!-- Content Right Block -->
+                        <div class="jos order-1 md:order-2" data-jos_animation="fade-right">
+                            <div class="section-block">
+                                <h2 class="mb-6 font-familjenGrotesk text-4xl font-bold leading-none text-black md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                                    Our simplified & impactful steps
+                                </h2>
+                                <p class="section-para">
+                                    We will work to understand more about user's business and
+                                    goals & create a simple step-by-step SEO plan to help
+                                    them.
+                                </p>
+                            </div>
+
+                            <!-- Accordion List-->
+                            <ul class="mt-[50px] flex flex-col gap-6">
+                                <!-- Accordion Item -->
+                                <li class="accordion-item-style-3 accordion-item active text-lg leading-[1.43] lg:text-[21px]">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex gap-x-6 font-semibold text-black">
+                                        <div class="accordion-icon inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border border-black">
+                                            1
+                                        </div>
+                                        <button class="flex-1 text-left">
+                                            Keyword Research and On-Page Optimization
+                                        </button>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body ml-[70px]">
+                                        Our vision is describe your long-term vision or goals.
+                                        We're committed to explain how your company plans.
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                                <!-- Accordion Item -->
+                                <li class="accordion-item-style-3 accordion-item text-lg leading-[1.43] lg:text-[21px]">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex gap-x-6 font-semibold text-black">
+                                        <span class="accordion-icon inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border border-black">
+                                            2
+                                        </span>
+                                        <button class="flex-1 text-left">
+                                            Off-Page SEO and Link Building
+                                        </button>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body ml-[70px]">
+                                        If your business has a physical presence, optimize your
+                                        website for local search by claiming.
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                                <!-- Accordion Item -->
+                                <li class="accordion-item-style-3 accordion-item text-lg leading-[1.43] lg:text-[21px]">
+                                    <!-- Accordion Header -->
+                                    <div class="accordion-header flex gap-x-6 font-semibold text-black">
+                                        <span class="accordion-icon inline-flex h-[50px] w-[50px] items-center justify-center rounded-[50%] border border-black">
+                                            3
+                                        </span>
+                                        <button class="flex-1 text-left">
+                                            Keyword Research and On-Page Optimization
+                                        </button>
+                                    </div>
+                                    <!-- Accordion Header -->
+                                    <!-- Accordion Body -->
+                                    <div class="accordion-body ml-[70px]">
+                                        Regularly monitor your website's performance using tools
+                                        like Google Analytics & Google Search Console.
+                                    </div>
+                                    <!-- Accordion Body -->
+                                </li>
+                                <!-- Accordion Item -->
+                            </ul>
+                            <!-- Accordion List-->
+                        </div>
+                        <!-- Content Right Block -->
+                    </div>
+                    <!-- Content Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Content Section End :::... -->
+
+        <!-- ...::: Text Slider Section Start :::... -->
+        <div class="text-slider">
+            <div class="bg-black py-5">
+                <!-- Text Slider Area -->
+                <div class="horizontal-slide-from-right-to-left whitespace-nowrap font-familjenGrotesk text-4xl font-bold tracking-[1px]">
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#8D7DFF]"># Online Marketing</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FF7545]"># SEO Expert</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FF94FF]"># Content Marketing</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FFE757]"># Link Building</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#8D7DFF]"># Digital Strategy</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FF7545]"># Google Rankings</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#8D7DFF]"># Online Marketing</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FF7545]"># SEO Expert</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FF94FF]"># Content Marketing</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FFE757]"># Link Building</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#8D7DFF]"># Digital Strategy</span>
+                    <!-- Single Text Slider -->
+                    <!-- Single Text Slider -->
+                    <span class="inline-block px-3 text-[#FF7545]"># Google Rankings</span>
+                    <!-- Single Text Slider -->
+                </div>
+                <!-- Text Slider Area -->
+            </div>
+        </div>
+        <!-- ...::: Text Slider Section End :::... -->
+
+        <!-- ...::: Team Section Start :::... -->
+        <section class="section-team">
+            <!-- Section Space -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="mb-10 flex flex-wrap items-center justify-between md:mb-[60px] lg:mb-20">
+                        <div class="section-block max-w-2xl">
+                            <h2 class="jos mb-6 font-familjenGrotesk text-4xl font-bold leading-none text-black md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                                We're a team of professionals
+                            </h2>
+                        </div>
+                        <a href="{% url 'team' %}" class="jos inline-flex items-center justify-center rounded-[50px] bg-[#FFE757] px-11 py-4 text-base font-bold hover:bg-black hover:text-[#FFE757]">Meet our team</a>
+                    </div>
+
+                    <!-- Team List -->
+                    <ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Team Item -->
+                        <li class="jos rounded-[10px] border border-black p-5" data-jos_animation="flip-left">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/images/th-3/team-img-1.jpg" alt="team-img-1" width="376" height="400" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="{% url 'teamDetails' %}" class="mb-[10px] block font-familjenGrotesk text-2xl font-bold">Adrew Smith</a>
+                                <span class="para-lg">Senior SEO Manager</span>
+                            </div>
+                        </li>
+                        <!-- Team Item -->
+                        <!-- Team Item -->
+                        <li class="jos rounded-[10px] border border-black p-5" data-jos_animation="flip-left">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/images/th-3/team-img-2.jpg" alt="team-img-2" width="376" height="400" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="{% url 'teamDetails' %}" class="mb-[10px] block font-familjenGrotesk text-2xl font-bold">Jones Jack</a>
+                                <span class="para-lg">Strategy Director</span>
+                            </div>
+                        </li>
+                        <!-- Team Item -->
+                        <!-- Team Item -->
+                        <li class="jos rounded-[10px] border border-black p-5" data-jos_animation="flip-left">
+                            <div class="overflow-hidden rounded-[10px]">
+                                <img src="/static/img/images/th-3/team-img-3.jpg" alt="team-img-3" width="376" height="400" class="h-full w-full object-cover" />
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="{% url 'teamDetails' %}" class="mb-[10px] block font-familjenGrotesk text-2xl font-bold">Marsal Straw</a>
+                                <span class="para-lg">SEO Content Writer</span>
+                            </div>
+                        </li>
+                        <!-- Team Item -->
+                    </ul>
+                    <!-- Team List -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: Team Section End :::... -->
+
+        <!-- ...::: FAQ Section Start :::... -->
+        <section class="section-faq">
+            <!-- Section Space -->
+            <div class="section-space-bottom">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Section Block -->
+                    <div class="section-block mx-auto mb-10 max-w-4xl md:mb-[60px] lg:mb-20">
+                        <h2 class="jos text-center font-familjenGrotesk text-4xl font-bold leading-none md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                            We make sure to answer all questions
+                        </h2>
+                    </div>
+                    <!-- Section Block -->
+
+                    <!-- Accordion List -->
+                    <ul class="jos flex flex-col divide-y divide-black">
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-4 accordion-item active py-[30px] first-of-type:pt-0 last-of-type:pb-0">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header flex items-center justify-between gap-6 text-4xl text-black">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] lg:text-3xl">
+                                    What is SEO?
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-cheveron-down.svg" alt="icon-black-cheveron-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[1126px] opacity-80">
+                                <p class="para-lg pt-5">
+                                    SEO, or Search Engine Optimization, is a set of strategies
+                                    and techniques aimed at improving a website's visibility
+                                    in search engine results pages (SERPs) to increase organic
+                                    (non-paid) traffic.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-4 accordion-item py-[30px] first-of-type:pt-0 last-of-type:pb-0">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header flex items-center justify-between gap-6 text-4xl text-black">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] lg:text-3xl">
+                                    Why is SEO important for my website?
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-cheveron-down.svg" alt="icon-black-cheveron-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[1126px] opacity-80">
+                                <p class="para-lg pt-5">
+                                    SEO is essential because it helps your website rank higher
+                                    in search results, making it more visible to potential
+                                    visitors. This can lead to increased organic traffic,
+                                    better brand exposure, and potential business growth.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-4 accordion-item py-[30px] first-of-type:pt-0 last-of-type:pb-0">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header flex items-center justify-between gap-6 text-4xl text-black">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] lg:text-3xl">
+                                    How can I improve my website's load speed for SEO?
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-cheveron-down.svg" alt="icon-black-cheveron-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[1126px] opacity-80">
+                                <p class="para-lg pt-5">
+                                    You can enhance website speed by optimizing images, using
+                                    content delivery networks (CDNs), reducing unnecessary
+                                    plugins, and enabling browser caching, among other
+                                    techniques.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                        <!-- Accordion Item -->
+                        <li class="accordion-item-style-4 accordion-item py-[30px] first-of-type:pt-0 last-of-type:pb-0">
+                            <!-- Accordion Header -->
+                            <div class="accordion-header flex items-center justify-between gap-6 text-4xl text-black">
+                                <button class="flex-1 text-left font-syne text-2xl font-bold leading-[1.4] lg:text-3xl">
+                                    How can I track the success of my SEO efforts?
+                                </button>
+                                <div class="accordion-icon">
+                                    <img src="/static/img/icons/icon-black-cheveron-down.svg" alt="icon-black-cheveron-down" />
+                                </div>
+                            </div>
+                            <!-- Accordion Header -->
+                            <!-- Accordion Body -->
+                            <div class="accordion-body max-w-[1126px] opacity-80">
+                                <p class="para-lg pt-5">
+                                    You can track SEO success by using tools like Google
+                                    Analytics and Google Search Console. Monitor key metrics,
+                                    such as organic traffic, keyword rankings, click-through
+                                    rates, and conversion rates.
+                                </p>
+                            </div>
+                            <!-- Accordion Body -->
+                        </li>
+                        <!-- Accordion Item -->
+                    </ul>
+                    <!-- Accordion List -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Section Space -->
+        </section>
+        <!-- ...::: FAQ Section End :::... -->
+
+        <!-- ...::: Contact Section Start :::... -->
+        <section class="section-contact">
+            <div class="relative z-10">
+                <!-- Section Background -->
+                <div class="bg-black">
+                    <!-- Section Space -->
+                    <div class="section-space">
+                        <!-- Section Container -->
+                        <div class="container">
+                            <!-- Contact Area -->
+                            <div class="grid grid-cols-1 items-center gap-x-[76px] gap-y-10 lg:grid-cols-[1fr_minmax(0,0.75fr)]">
+                                <!-- Contact Left Block -->
+                                <div class="jos text-white" data-jos_animation="fade-right">
+                                    <div class="section-block">
+                                        <h2 class="mb-6 font-familjenGrotesk text-4xl font-bold leading-none -tracking-[1px] md:text-5xl lg:text-6xl xl:text-7xl xxl:text-[85px]">
+                                            Want to boost your business with our SEO expertise?
+                                        </h2>
+                                        <p class="section-para">
+                                            Experienced SEO experts proven strategies & innovative
+                                            techniques to increase your website's visibility,
+                                            drive organic traffic, and improve your digital
+                                            performance and grow your online reach.
+                                        </p>
+                                    </div>
+
+                                    <!-- Contact Info -->
+                                    <div class="mt-[50px]">
+                                        <h4 class="font-familjenGrotesk leading-[1.2] -tracking-[0.5px]">
+                                            Contact us directly:
+                                        </h4>
+
+                                        <!-- Contact Info List -->
+                                        <ul class="mt-[30px] flex flex-wrap gap-6 text-lg font-semibold leading-[1.43] text-white lg:text-[21px]">
+                                            <!-- Content Info Item -->
+                                            <li class="flex items-center gap-x-3">
+                                                <!-- Icon -->
+                                                <div class="flex h-10 w-10 items-center justify-center rounded-[50%] bg-[#FFE757]">
+                                                    <img src="/static/img/icons/icon-black-phone.svg" alt="icon-black-phone" width="24" height="24" />
+                                                </div>
+                                                <!-- Icon -->
+                                                <!-- Text -->
+                                                <a href="tel:+0882346849" class="flex-1 hover:text-[#FFE757]">+088-234-6849</a>
+                                                <!-- Text -->
+                                            </li>
+                                            <!-- Content Info Item -->
+                                            <!-- Content Info Item -->
+                                            <li class="flex items-center gap-x-3">
+                                                <!-- Icon -->
+                                                <div class="flex h-10 w-10 items-center justify-center rounded-[50%] bg-[#FFE757]">
+                                                    <img src="/static/img/icons/icon-black-mail.svg" alt="icon-black-mail.svg') }}" width="28" height="28" />
+                                                </div>
+                                                <!-- Icon -->
+                                                <!-- Text -->
+                                                <a href="mailto:example@gmail.com" class="flex-1 hover:text-[#FFE757]">example@gmail.com</a>
+                                                <!-- Text -->
+                                            </li>
+                                            <!-- Content Info Item -->
+                                            <!-- Content Info Item -->
+                                            <li class="flex items-center gap-x-3">
+                                                <!-- Icon -->
+                                                <div class="flex h-10 w-10 items-center justify-center rounded-[50%] bg-[#FFE757]">
+                                                    <img src="/static/img/icons/icon-black-location-marker.svg" alt="icon-black-location-marker.svg') }}" width="24" height="24" />
+                                                </div>
+                                                <!-- Icon -->
+                                                <!-- Text -->
+                                                <address class="flex-1 not-italic">
+                                                    Haward Street,10203 USA
+                                                </address>
+                                                <!-- Text -->
+                                            </li>
+                                            <!-- Content Info Item -->
+                                        </ul>
+                                        <!-- Contact Info List -->
+                                    </div>
+                                    <!-- Contact Info -->
+                                </div>
+                                <!-- Contact Left Block -->
+
+                                <!-- Contact Right Block -->
+                                <div class="jos rounded-xl bg-white p-10" data-jos_animation="fade-left">
+                                    <h4 class="mb-3 font-familjenGrotesk text-black">
+                                        Send us a message
+                                    </h4>
+                                    <p class="para-lg">
+                                        Fill out the form and our expert will get back to you
+                                        with a free analysis and proposal
+                                    </p>
+                                    <form action="#" method="post" class="mt-[30px]">
+                                        <input type="text" placeholder="Enter full name" class="w-full border-b border-[#CCCCCC] bg-[] py-[18px] text-base font-semibold text-black outline-none transition-all placeholder:text-[#333333] focus:border-black" required />
+                                        <input type="email" placeholder="Enter email address" class="w-full border-b border-[#CCCCCC] bg-[] py-[18px] text-base font-semibold text-black outline-none transition-all placeholder:text-[#333333] focus:border-black" required />
+                                        <textarea placeholder="Write us your questions" class="min-h-10 w-full border-b border-[#CCCCCC] bg-[] py-[18px] text-base font-semibold text-black outline-none transition-all placeholder:text-[#333333] focus:border-black" required></textarea>
+
+                                        <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-[50px] bg-[#FFE757] px-11 py-4 text-base font-bold hover:bg-black hover:text-[#FFE757]">
+                                            Submit now
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- Contact Right Block -->
+                            </div>
+                            <!-- Contact Area -->
+                        </div>
+                        <!-- Section Container -->
+                    </div>
+                    <!-- Section Space -->
+                </div>
+                <!-- Section Background -->
+                <!-- Background Shape -->
+                <div class="jos absolute -bottom-40 -right-28 z-10" data-jos_animation="fade-left">
+                    <img src="/static/img/elemnts/shape-purple-blue-polygon-star.svg" alt="shape-purple-blue-polygon-star" width="420" height="420" />
+                </div>
+                <!-- Background Shape -->
+            </div>
+        </section>
+        <!-- ...::: Contact Section End :::... -->
+    </main>
+    <!--  Main Wrapper End -->
+
+    <!-- ...::: Footer Section Start :::... -->
+    <footer class="section-footer">
+        <div class="relative z-10">
+            <!-- Footer Top -->
+            <div class="section-space">
+                <!-- Section Container -->
+                <div class="container">
+                    <!-- Footer Top Area -->
+                    <div class="flex justify-center">
+                        <img src="/static/img/images/th-3/footer-img.png" alt="footer-img" width="1296" height="258" class="max-w-full" />
+                    </div>
+                    <!-- Footer Top Area -->
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Top -->
+
+            <!-- Horizontal Line -->
+            <div class="horizontal-line bg-[#E6E6E6]"></div>
+            <!-- Horizontal Line -->
+
+            <!-- Footer Bottom -->
+            <div class="py-[35px]">
+                <!-- Section Container -->
+                <div class="container">
+                    <div class="flex flex-col-reverse flex-wrap justify-center gap-x-[30px] gap-y-4 lg:flex-row xl:justify-between">
+                        <!-- Copyright Text -->
+                        <div class="text-center text-black lg:text-start">
+                            &copy; Copyright 2024, All Rights Reserved by PixcelsThemes
+                        </div>
+                        <!-- Copyright Text -->
+
+                        <!-- Footer Nav -->
+                        <nav class="font-semibold text-black">
+                            <ul class="flex flex-wrap justify-center gap-x-10 gap-y-3 lg:gap-x-14 xl:justify-start">
+                                <li>
+                                    <a href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about' %}">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'service' %}">Services</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'portfolio1' %}">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Footer Nav -->
+                    </div>
+                </div>
+                <!-- Section Container -->
+            </div>
+            <!-- Footer Bottom -->
+        </div>
+    </footer>
+    <!-- ...::: Footer Section End :::... -->
+
+{% endblock content %}
