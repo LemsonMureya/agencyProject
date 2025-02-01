@@ -27,11 +27,11 @@ SECRET_KEY=os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ENVIRONMENT = os.getenv('ENVIRONMENT', 'development')
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 # Detect if running in production
+ENVIRONMENT = os.getenv('RAILWAY_ENVIRONMENT', 'development')
 if ENVIRONMENT == 'production':
     DATABASES = {
         "default": dj_database_url.config(
@@ -41,7 +41,6 @@ if ENVIRONMENT == 'production':
         )
     }
 else:
-    # Use local SQLite
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
