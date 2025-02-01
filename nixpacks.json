@@ -5,7 +5,7 @@
         "cmds": [
           "python -m ensurepip --upgrade",
           "python -m pip install --no-cache-dir -r requirements.txt",
-          "nix-collect-garbage -d"
+          "nix-collect-garbage -d" 
         ]
       },
       "build": {
