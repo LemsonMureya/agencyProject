@@ -1,0 +1,19 @@
+{
+    "phases": {
+      "install": {
+        "cmds": [
+          "pip install --no-cache-dir -r requirements.txt",
+          "npm ci"
+        ]
+      },
+      "build": {
+        "cmds": [
+          "npm run build",
+          "python manage.py collectstatic --noinput"
+        ]
+      },
+      "start": {
+        "cmd": "python manage.py migrate && gunicorn Aximo.wsgi:application --bind 0.0.0.0:$PORT"
+      }
+    }
+  }
