@@ -1,14 +1,14 @@
 {
     "phases": {
       "install": {
+        "nixPkgs": ["python311"],
         "cmds": [
-          "pip install --no-cache-dir -r requirements.txt",
-          "npm ci"
+          "python -m ensurepip --upgrade",
+          "python -m pip install --no-cache-dir -r requirements.txt"
         ]
       },
       "build": {
         "cmds": [
-          "npm run build",
           "python manage.py collectstatic --noinput"
         ]
       },
