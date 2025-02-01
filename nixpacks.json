@@ -1,7 +1,17 @@
 {
     "phases": {
-      "install": "pip install -r requirements.txt",
-      "build": "python manage.py collectstatic --noinput",
-      "start": "python manage.py migrate && gunicorn Aximo.wsgi:application --bind 0.0.0.0:$PORT"
+      "install": {
+        "cmds": [
+          "pip install --no-cache-dir -r requirements.txt"
+        ]
+      },
+      "build": {
+        "cmds": [
+          "python manage.py collectstatic --noinput"
+        ]
+      },
+      "start": {
+        "cmd": "python manage.py migrate && gunicorn Aximo.wsgi:application --bind 0.0.0.0:$PORT"
+      }
     }
   }
